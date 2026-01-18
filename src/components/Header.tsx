@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
@@ -23,13 +24,15 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-accent-blue to-accent-cyan rounded-lg flex items-center justify-center">
-              <span className="text-primary-900 font-bold text-lg">T</span>
-            </div>
-            <span className="text-xl font-bold text-text-primary hidden sm:block">
-              Techn<span className="text-accent-blue">0</span>smart
-            </span>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Technosmart"
+              width={180}
+              height={50}
+              className="h-10 md:h-12 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Navigation */}

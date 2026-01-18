@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Globe } from 'lucide-react';
 
@@ -24,9 +24,7 @@ export default function LanguageSwitcher() {
   const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0];
 
   const handleLanguageChange = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, '') || '/';
-    const newPath = newLocale === 'de' ? currentPath : `/${newLocale}${currentPath}`;
-    router.push(newPath);
+    router.replace(pathname, { locale: newLocale as 'de' | 'en' | 'uk' | 'ru' | 'fr' | 'pl' });
     setIsOpen(false);
   };
 

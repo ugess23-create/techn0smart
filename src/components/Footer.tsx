@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -22,13 +23,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent-blue to-accent-cyan rounded-lg flex items-center justify-center">
-                <span className="text-primary-900 font-bold text-lg">T</span>
-              </div>
-              <span className="text-xl font-bold text-text-primary">
-                Techn<span className="text-accent-blue">0</span>smart
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="Technosmart"
+                width={200}
+                height={55}
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-text-secondary max-w-md mb-4">
               Professionelle Reparatur von Laptops, Smartphones, Spielkonsolen, Monitoren und Kopfhörern in Frankfurt am Main.
