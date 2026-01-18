@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Techn0smart - Professional Electronics Repair in Frankfurt",
+    "description": "Fast and reliable repair of laptops, smartphones, gaming consoles, monitors, and headphones in Frankfurt am Main. Warranty on all work."
+  },
+  "nav": {
+    "services": "Services",
+    "advantages": "Advantages",
+    "portfolio": "Portfolio",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professional Electronics Repair",
+    "subtitle": "in Frankfurt am Main",
+    "description": "We repair laptops, smartphones, gaming consoles, monitors, and headphones quickly and with warranty",
+    "cta": "Get a Quote in 1 Minute",
+    "trusted": "More than 500 satisfied customers"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We repair various types of devices",
+    "laptop": {
+      "title": "Laptops",
+      "description": "Display, keyboard, motherboard, fan repairs and software issues"
+    },
+    "phone": {
+      "title": "Smartphones",
+      "description": "Screen replacement, battery change, port repair and water damage treatment"
+    },
+    "console": {
+      "title": "Gaming Consoles",
+      "description": "PlayStation, Xbox, Nintendo Switch - repair of all types of defects"
+    },
+    "monitor": {
+      "title": "Monitors",
+      "description": "Backlight, power supply and display module repairs"
+    },
+    "headphones": {
+      "title": "Headphones",
+      "description": "Premium headphone repair: cables, drivers, headbands"
+    }
+  },
+  "advantages": {
+    "title": "Why Choose Us?",
+    "subtitle": "Our advantages",
+    "fast": {
+      "title": "Fast Repair",
+      "description": "Most repairs are completed within 1-2 days"
+    },
+    "warranty": {
+      "title": "Warranty",
+      "description": "We provide warranty on all performed work"
+    },
+    "price": {
+      "title": "Fair Prices",
+      "description": "Transparent pricing with no hidden costs"
+    },
+    "experience": {
+      "title": "Experienced Technicians",
+      "description": "Our specialists have years of experience"
+    }
+  },
+  "portfolio": {
+    "title": "Our Work",
+    "subtitle": "Examples of successful repairs"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "subtitle": "What our customers say"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your questions",
+    "q1": {
+      "question": "How long does the repair take?",
+      "answer": "Most repairs are completed within 1-2 business days. Complex cases may take longer, and we will inform you in advance."
+    },
+    "q2": {
+      "question": "Do you offer warranty on repairs?",
+      "answer": "Yes, we provide warranty on all performed work and installed parts in accordance with German law."
+    },
+    "q3": {
+      "question": "How can I get a quote?",
+      "answer": "Click the 'Get a Quote in 1 Minute' button and leave your contact details. We will call you back and provide the exact price."
+    },
+    "q4": {
+      "question": "Do you repair older devices?",
+      "answer": "We focus on modern technology. We do not repair very old or outdated devices as it is not economically viable."
+    },
+    "q5": {
+      "question": "Can I drop off my device in person?",
+      "answer": "Yes, you can bring your device to our workshop at Offenbacher Landstraße 306. We are open Mon-Sat from 11:00 to 19:00."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We look forward to your inquiry",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "hoursValue": "Mon-Sat: 11:00 - 19:00",
+    "form": {
+      "name": "Your Name",
+      "phone": "Phone Number",
+      "device": "Device Type",
+      "devicePlaceholder": "Select your device",
+      "laptop": "Laptop",
+      "smartphone": "Smartphone",
+      "console": "Gaming Console",
+      "monitor": "Monitor",
+      "headphones": "Headphones",
+      "other": "Other",
+      "message": "Problem Description",
+      "messagePlaceholder": "Briefly describe the problem...",
+      "privacy": "I agree to the processing of my personal data according to the Privacy Policy",
+      "submit": "Send Request",
+      "success": "Thank you! We will contact you shortly.",
+      "error": "An error occurred. Please try again."
+    }
+  },
+  "callback": {
+    "title": "Get a Quote in 1 Minute",
+    "subtitle": "Leave your details and we will call you back immediately",
+    "close": "Close"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "impressum": "Impressum",
+    "privacy": "Privacy Policy",
+    "agb": "Terms & Conditions",
+    "cookies": "Cookie Policy",
+    "warranty": "Warranty Terms",
+    "refund": "Right of Withdrawal"
+  },
+  "cookie": {
+    "message": "This website uses cookies to provide you with the best experience.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learnMore": "Learn More"
+  }
+}

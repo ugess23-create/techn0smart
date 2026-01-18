@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Techn0smart - Professionelle Technik-Reparatur in Frankfurt",
+    "description": "Schnelle und zuverlässige Reparatur von Laptops, Smartphones, Spielkonsolen, Monitoren und Kopfhörern in Frankfurt am Main. Garantie auf alle Arbeiten."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "advantages": "Vorteile",
+    "portfolio": "Portfolio",
+    "reviews": "Bewertungen",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Professionelle Technik-Reparatur",
+    "subtitle": "in Frankfurt am Main",
+    "description": "Wir reparieren Laptops, Smartphones, Spielkonsolen, Monitore und Kopfhörer schnell und mit Garantie",
+    "cta": "Preis in 1 Minute erfahren",
+    "trusted": "Mehr als 500 zufriedene Kunden"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Wir reparieren verschiedene Arten von Geräten",
+    "laptop": {
+      "title": "Laptops",
+      "description": "Reparatur von Displays, Tastaturen, Motherboards, Lüftern und Software-Problemen"
+    },
+    "phone": {
+      "title": "Smartphones",
+      "description": "Displaytausch, Akkuwechsel, Anschlussreparatur und Wasserschaden-Behandlung"
+    },
+    "console": {
+      "title": "Spielkonsolen",
+      "description": "PlayStation, Xbox, Nintendo Switch - Reparatur aller Arten von Defekten"
+    },
+    "monitor": {
+      "title": "Monitore",
+      "description": "Reparatur von Hintergrundbeleuchtung, Netzteilen und Displaymodulen"
+    },
+    "headphones": {
+      "title": "Kopfhörer",
+      "description": "Reparatur von Premium-Kopfhörern: Kabel, Treiber, Bügel"
+    }
+  },
+  "advantages": {
+    "title": "Warum wir?",
+    "subtitle": "Unsere Vorteile",
+    "fast": {
+      "title": "Schnelle Reparatur",
+      "description": "Die meisten Reparaturen werden innerhalb von 1-2 Tagen durchgeführt"
+    },
+    "warranty": {
+      "title": "Garantie",
+      "description": "Wir geben Garantie auf alle durchgeführten Arbeiten"
+    },
+    "price": {
+      "title": "Faire Preise",
+      "description": "Transparente Preisgestaltung ohne versteckte Kosten"
+    },
+    "experience": {
+      "title": "Erfahrene Meister",
+      "description": "Unsere Spezialisten haben langjährige Erfahrung"
+    }
+  },
+  "portfolio": {
+    "title": "Unsere Arbeiten",
+    "subtitle": "Beispiele erfolgreicher Reparaturen"
+  },
+  "reviews": {
+    "title": "Kundenbewertungen",
+    "subtitle": "Was unsere Kunden sagen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Antworten auf Ihre Fragen",
+    "q1": {
+      "question": "Wie lange dauert die Reparatur?",
+      "answer": "Die meisten Reparaturen werden innerhalb von 1-2 Werktagen durchgeführt. Komplexe Fälle können länger dauern, worüber wir Sie im Voraus informieren."
+    },
+    "q2": {
+      "question": "Bieten Sie Garantie auf die Reparatur?",
+      "answer": "Ja, wir bieten Garantie auf alle durchgeführten Arbeiten und eingebauten Ersatzteile gemäß deutschem Recht."
+    },
+    "q3": {
+      "question": "Wie kann ich den Preis erfahren?",
+      "answer": "Klicken Sie auf die Schaltfläche 'Preis in 1 Minute erfahren' und hinterlassen Sie Ihre Kontaktdaten. Wir rufen Sie zurück und nennen den genauen Preis."
+    },
+    "q4": {
+      "question": "Reparieren Sie auch ältere Geräte?",
+      "answer": "Wir konzentrieren uns auf moderne Technik. Sehr alte oder veraltete Geräte reparieren wir nicht, da dies wirtschaftlich nicht sinnvoll ist."
+    },
+    "q5": {
+      "question": "Kann ich mein Gerät vor Ort abgeben?",
+      "answer": "Ja, Sie können Ihr Gerät in unserer Werkstatt in der Offenbacher Landstraße 306 abgeben. Wir sind Mo-Sa von 11:00 bis 19:00 Uhr für Sie da."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Ihre Anfrage",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "hoursValue": "Mo-Sa: 11:00 - 19:00",
+    "form": {
+      "name": "Ihr Name",
+      "phone": "Telefonnummer",
+      "device": "Gerätetyp",
+      "devicePlaceholder": "Wählen Sie Ihr Gerät",
+      "laptop": "Laptop",
+      "smartphone": "Smartphone",
+      "console": "Spielkonsole",
+      "monitor": "Monitor",
+      "headphones": "Kopfhörer",
+      "other": "Sonstiges",
+      "message": "Problembeschreibung",
+      "messagePlaceholder": "Beschreiben Sie kurz das Problem...",
+      "privacy": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der Datenschutzerklärung zu",
+      "submit": "Anfrage senden",
+      "success": "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "callback": {
+    "title": "Preis in 1 Minute erfahren",
+    "subtitle": "Hinterlassen Sie Ihre Daten und wir rufen Sie sofort zurück",
+    "close": "Schließen"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "agb": "AGB",
+    "cookies": "Cookie-Richtlinie",
+    "warranty": "Garantiebedingungen",
+    "refund": "Widerrufsrecht"
+  },
+  "cookie": {
+    "message": "Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "learnMore": "Mehr erfahren"
+  }
+}

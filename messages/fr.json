@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Techn0smart - Réparation professionnelle d'appareils électroniques à Francfort",
+    "description": "Réparation rapide et fiable d'ordinateurs portables, smartphones, consoles de jeux, moniteurs et écouteurs à Francfort-sur-le-Main. Garantie sur tous les travaux."
+  },
+  "nav": {
+    "services": "Services",
+    "advantages": "Avantages",
+    "portfolio": "Portfolio",
+    "reviews": "Avis",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Réparation professionnelle d'électronique",
+    "subtitle": "à Francfort-sur-le-Main",
+    "description": "Nous réparons ordinateurs portables, smartphones, consoles de jeux, moniteurs et écouteurs rapidement et avec garantie",
+    "cta": "Obtenez un devis en 1 minute",
+    "trusted": "Plus de 500 clients satisfaits"
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Nous réparons différents types d'appareils",
+    "laptop": {
+      "title": "Ordinateurs portables",
+      "description": "Réparation d'écrans, claviers, cartes mères, ventilateurs et problèmes logiciels"
+    },
+    "phone": {
+      "title": "Smartphones",
+      "description": "Remplacement d'écran, changement de batterie, réparation de ports et traitement des dégâts des eaux"
+    },
+    "console": {
+      "title": "Consoles de jeux",
+      "description": "PlayStation, Xbox, Nintendo Switch - réparation de tous types de défauts"
+    },
+    "monitor": {
+      "title": "Moniteurs",
+      "description": "Réparation de rétroéclairage, alimentations et modules d'affichage"
+    },
+    "headphones": {
+      "title": "Écouteurs",
+      "description": "Réparation d'écouteurs premium : câbles, drivers, arceaux"
+    }
+  },
+  "advantages": {
+    "title": "Pourquoi nous choisir ?",
+    "subtitle": "Nos avantages",
+    "fast": {
+      "title": "Réparation rapide",
+      "description": "La plupart des réparations sont effectuées en 1-2 jours"
+    },
+    "warranty": {
+      "title": "Garantie",
+      "description": "Nous offrons une garantie sur tous les travaux effectués"
+    },
+    "price": {
+      "title": "Prix justes",
+      "description": "Tarification transparente sans frais cachés"
+    },
+    "experience": {
+      "title": "Techniciens expérimentés",
+      "description": "Nos spécialistes ont des années d'expérience"
+    }
+  },
+  "portfolio": {
+    "title": "Nos travaux",
+    "subtitle": "Exemples de réparations réussies"
+  },
+  "reviews": {
+    "title": "Avis clients",
+    "subtitle": "Ce que disent nos clients"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses à vos questions",
+    "q1": {
+      "question": "Combien de temps dure la réparation ?",
+      "answer": "La plupart des réparations sont effectuées en 1-2 jours ouvrables. Les cas complexes peuvent prendre plus de temps, nous vous informerons à l'avance."
+    },
+    "q2": {
+      "question": "Offrez-vous une garantie sur les réparations ?",
+      "answer": "Oui, nous offrons une garantie sur tous les travaux effectués et les pièces installées conformément à la loi allemande."
+    },
+    "q3": {
+      "question": "Comment puis-je obtenir un devis ?",
+      "answer": "Cliquez sur le bouton 'Obtenez un devis en 1 minute' et laissez vos coordonnées. Nous vous rappellerons et vous donnerons le prix exact."
+    },
+    "q4": {
+      "question": "Réparez-vous les anciens appareils ?",
+      "answer": "Nous nous concentrons sur la technologie moderne. Nous ne réparons pas les appareils très anciens ou obsolètes car ce n'est pas économiquement viable."
+    },
+    "q5": {
+      "question": "Puis-je déposer mon appareil en personne ?",
+      "answer": "Oui, vous pouvez apporter votre appareil à notre atelier au Offenbacher Landstraße 306. Nous sommes ouverts du lundi au samedi de 11h00 à 19h00."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous attendons votre demande avec impatience",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Heures d'ouverture",
+    "hoursValue": "Lun-Sam : 11:00 - 19:00",
+    "form": {
+      "name": "Votre nom",
+      "phone": "Numéro de téléphone",
+      "device": "Type d'appareil",
+      "devicePlaceholder": "Sélectionnez votre appareil",
+      "laptop": "Ordinateur portable",
+      "smartphone": "Smartphone",
+      "console": "Console de jeux",
+      "monitor": "Moniteur",
+      "headphones": "Écouteurs",
+      "other": "Autre",
+      "message": "Description du problème",
+      "messagePlaceholder": "Décrivez brièvement le problème...",
+      "privacy": "J'accepte le traitement de mes données personnelles conformément à la Politique de confidentialité",
+      "submit": "Envoyer la demande",
+      "success": "Merci ! Nous vous contacterons bientôt.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    }
+  },
+  "callback": {
+    "title": "Obtenez un devis en 1 minute",
+    "subtitle": "Laissez vos coordonnées et nous vous rappellerons immédiatement",
+    "close": "Fermer"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "impressum": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "agb": "Conditions générales",
+    "cookies": "Politique des cookies",
+    "warranty": "Conditions de garantie",
+    "refund": "Droit de rétractation"
+  },
+  "cookie": {
+    "message": "Ce site utilise des cookies pour vous offrir la meilleure expérience.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "learnMore": "En savoir plus"
+  }
+}

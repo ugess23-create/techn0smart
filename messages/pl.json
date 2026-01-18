@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Techn0smart - Profesjonalna naprawa sprzętu we Frankfurcie",
+    "description": "Szybka i niezawodna naprawa laptopów, smartfonów, konsol do gier, monitorów i słuchawek we Frankfurcie nad Menem. Gwarancja na wszystkie prace."
+  },
+  "nav": {
+    "services": "Usługi",
+    "advantages": "Zalety",
+    "portfolio": "Portfolio",
+    "reviews": "Opinie",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Profesjonalna naprawa elektroniki",
+    "subtitle": "we Frankfurcie nad Menem",
+    "description": "Naprawiamy laptopy, smartfony, konsole do gier, monitory i słuchawki szybko i z gwarancją",
+    "cta": "Poznaj cenę w 1 minutę",
+    "trusted": "Ponad 500 zadowolonych klientów"
+  },
+  "services": {
+    "title": "Nasze usługi",
+    "subtitle": "Naprawiamy różne rodzaje urządzeń",
+    "laptop": {
+      "title": "Laptopy",
+      "description": "Naprawa wyświetlaczy, klawiatur, płyt głównych, wentylatorów i problemów z oprogramowaniem"
+    },
+    "phone": {
+      "title": "Smartfony",
+      "description": "Wymiana ekranu, wymiana baterii, naprawa portów i usuwanie uszkodzeń wodnych"
+    },
+    "console": {
+      "title": "Konsole do gier",
+      "description": "PlayStation, Xbox, Nintendo Switch - naprawa wszystkich rodzajów usterek"
+    },
+    "monitor": {
+      "title": "Monitory",
+      "description": "Naprawa podświetlenia, zasilaczy i modułów wyświetlacza"
+    },
+    "headphones": {
+      "title": "Słuchawki",
+      "description": "Naprawa słuchawek premium: kable, przetworniki, pałąki"
+    }
+  },
+  "advantages": {
+    "title": "Dlaczego my?",
+    "subtitle": "Nasze zalety",
+    "fast": {
+      "title": "Szybka naprawa",
+      "description": "Większość napraw jest wykonywana w ciągu 1-2 dni"
+    },
+    "warranty": {
+      "title": "Gwarancja",
+      "description": "Udzielamy gwarancji na wszystkie wykonane prace"
+    },
+    "price": {
+      "title": "Uczciwe ceny",
+      "description": "Przejrzyste ceny bez ukrytych kosztów"
+    },
+    "experience": {
+      "title": "Doświadczeni technicy",
+      "description": "Nasi specjaliści mają wieloletnie doświadczenie"
+    }
+  },
+  "portfolio": {
+    "title": "Nasze prace",
+    "subtitle": "Przykłady udanych napraw"
+  },
+  "reviews": {
+    "title": "Opinie klientów",
+    "subtitle": "Co mówią nasi klienci"
+  },
+  "faq": {
+    "title": "Często zadawane pytania",
+    "subtitle": "Odpowiedzi na Twoje pytania",
+    "q1": {
+      "question": "Jak długo trwa naprawa?",
+      "answer": "Większość napraw jest wykonywana w ciągu 1-2 dni roboczych. Skomplikowane przypadki mogą trwać dłużej, o czym poinformujemy z wyprzedzeniem."
+    },
+    "q2": {
+      "question": "Czy udzielacie gwarancji na naprawy?",
+      "answer": "Tak, udzielamy gwarancji na wszystkie wykonane prace i zainstalowane części zgodnie z prawem niemieckim."
+    },
+    "q3": {
+      "question": "Jak mogę poznać cenę?",
+      "answer": "Kliknij przycisk 'Poznaj cenę w 1 minutę' i zostaw swoje dane kontaktowe. Oddzwonimy i podamy dokładną cenę."
+    },
+    "q4": {
+      "question": "Czy naprawiacie starsze urządzenia?",
+      "answer": "Koncentrujemy się na nowoczesnej technologii. Nie naprawiamy bardzo starych lub przestarzałych urządzeń, ponieważ nie jest to ekonomicznie opłacalne."
+    },
+    "q5": {
+      "question": "Czy mogę dostarczyć urządzenie osobiście?",
+      "answer": "Tak, możesz przynieść swoje urządzenie do naszego warsztatu przy Offenbacher Landstraße 306. Jesteśmy otwarci od poniedziałku do soboty w godzinach 11:00-19:00."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Czekamy na Twoje zapytanie",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "Email",
+    "hours": "Godziny otwarcia",
+    "hoursValue": "Pn-Sb: 11:00 - 19:00",
+    "form": {
+      "name": "Twoje imię",
+      "phone": "Numer telefonu",
+      "device": "Typ urządzenia",
+      "devicePlaceholder": "Wybierz urządzenie",
+      "laptop": "Laptop",
+      "smartphone": "Smartfon",
+      "console": "Konsola do gier",
+      "monitor": "Monitor",
+      "headphones": "Słuchawki",
+      "other": "Inne",
+      "message": "Opis problemu",
+      "messagePlaceholder": "Krótko opisz problem...",
+      "privacy": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z Polityką prywatności",
+      "submit": "Wyślij zapytanie",
+      "success": "Dziękujemy! Wkrótce się z Tobą skontaktujemy.",
+      "error": "Wystąpił błąd. Spróbuj ponownie."
+    }
+  },
+  "callback": {
+    "title": "Poznaj cenę w 1 minutę",
+    "subtitle": "Zostaw swoje dane, a natychmiast oddzwonimy",
+    "close": "Zamknij"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone",
+    "impressum": "Impressum",
+    "privacy": "Polityka prywatności",
+    "agb": "Regulamin",
+    "cookies": "Polityka cookies",
+    "warranty": "Warunki gwarancji",
+    "refund": "Prawo do odstąpienia"
+  },
+  "cookie": {
+    "message": "Ta strona używa plików cookie, aby zapewnić najlepsze wrażenia.",
+    "accept": "Akceptuję",
+    "decline": "Odrzuć",
+    "learnMore": "Dowiedz się więcej"
+  }
+}
