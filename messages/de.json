@@ -12,11 +12,15 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Professionelle Technik-Reparatur",
-    "subtitle": "in Frankfurt am Main",
-    "description": "Wir reparieren Laptops, Smartphones, Spielkonsolen, Monitore und Kopfhörer schnell und mit Garantie",
+    "title": "Reparatur von Smartphones,",
+    "titleLine2": "Laptops & Technik",
+    "device": "HANDY",
+    "deviceAnd": "und Laptop",
+    "repair": "REPARATUR",
+    "slogan": "Gerne für Sie da!",
+    "description": "Schnell, zuverlässig und mit Garantie in Frankfurt am Main",
     "cta": "Preis in 1 Minute erfahren",
-    "trusted": "Mehr als 500 zufriedene Kunden"
+    "trusted": "Über 2.000 zufriedene Kunden"
   },
   "services": {
     "title": "Unsere Leistungen",

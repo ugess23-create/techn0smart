@@ -12,11 +12,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Professional Electronics Repair",
-    "subtitle": "in Frankfurt am Main",
-    "description": "We repair laptops, smartphones, gaming consoles, monitors, and headphones quickly and with warranty",
+    "title": "Smartphone, Laptop",
+    "titleLine2": "& Electronics Repair",
+    "device": "PHONE",
+    "deviceAnd": "& laptop",
+    "repair": "REPAIR",
+    "slogan": "Happy to help you!",
+    "description": "Fast, reliable service with warranty in Frankfurt am Main",
     "cta": "Get a Quote in 1 Minute",
-    "trusted": "More than 500 satisfied customers"
+    "trusted": "Over 2,000 satisfied customers"
   },
   "services": {
     "title": "Our Services",

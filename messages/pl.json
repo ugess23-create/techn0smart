@@ -12,11 +12,15 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Profesjonalna naprawa elektroniki",
-    "subtitle": "we Frankfurcie nad Menem",
-    "description": "Naprawiamy laptopy, smartfony, konsole do gier, monitory i słuchawki szybko i z gwarancją",
+    "title": "Naprawa smartfonów,",
+    "titleLine2": "laptopów i elektroniki",
+    "device": "TELEFON",
+    "deviceAnd": "i laptop",
+    "repair": "NAPRAWA",
+    "slogan": "Chętnie Ci pomożemy!",
+    "description": "Szybko, niezawodnie i z gwarancją we Frankfurcie nad Menem",
     "cta": "Poznaj cenę w 1 minutę",
-    "trusted": "Ponad 500 zadowolonych klientów"
+    "trusted": "Ponad 2 000 zadowolonych klientów"
   },
   "services": {
     "title": "Nasze usługi",

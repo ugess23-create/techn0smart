@@ -144,11 +144,11 @@ export default function Contact() {
               <div>
                 <label className="block text-text-secondary text-sm mb-2">{t('form.name')}</label>
                 <div className="relative">
-                  <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+                  <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
                   <input
                     {...register('name')}
                     type="text"
-                    className="form-input pl-10"
+                    className="form-input text-center"
                   />
                 </div>
                 {errors.name && (
@@ -160,11 +160,11 @@ export default function Contact() {
               <div>
                 <label className="block text-text-secondary text-sm mb-2">{t('form.phone')}</label>
                 <div className="relative">
-                  <Phone size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+                  <Phone size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
                   <input
                     {...register('phone')}
                     type="tel"
-                    className="form-input pl-10"
+                    className="form-input text-center"
                   />
                 </div>
                 {errors.phone && (
@@ -193,12 +193,12 @@ export default function Contact() {
               <div>
                 <label className="block text-text-secondary text-sm mb-2">{t('form.message')}</label>
                 <div className="relative">
-                  <MessageSquare size={18} className="absolute left-3 top-3 text-text-muted" />
+                  <MessageSquare size={18} className="absolute left-4 top-4 text-text-muted" />
                   <textarea
                     {...register('message')}
                     placeholder={t('form.messagePlaceholder')}
                     rows={4}
-                    className="form-input pl-10 resize-none"
+                    className="form-input text-center placeholder:text-center resize-none"
                   />
                 </div>
               </div>

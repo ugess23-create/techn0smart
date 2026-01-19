@@ -12,11 +12,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Réparation professionnelle d'électronique",
-    "subtitle": "à Francfort-sur-le-Main",
-    "description": "Nous réparons ordinateurs portables, smartphones, consoles de jeux, moniteurs et écouteurs rapidement et avec garantie",
+    "title": "Réparation de smartphones,",
+    "titleLine2": "laptops et électronique",
+    "device": "TÉLÉPHONE",
+    "deviceAnd": "et laptop",
+    "repair": "RÉPARATION",
+    "slogan": "À votre service!",
+    "description": "Rapide, fiable et avec garantie à Francfort-sur-le-Main",
     "cta": "Obtenez un devis en 1 minute",
-    "trusted": "Plus de 500 clients satisfaits"
+    "trusted": "Plus de 2 000 clients satisfaits"
   },
   "services": {
     "title": "Nos services",

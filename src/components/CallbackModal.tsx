@@ -88,12 +88,12 @@ export default function CallbackModal({ isOpen, onClose }: CallbackModalProps) {
           {/* Name */}
           <div>
             <div className="relative">
-              <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+              <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
               <input
                 {...register('name')}
                 type="text"
                 placeholder={tForm('name')}
-                className="form-input pl-10"
+                className="form-input text-center placeholder:text-center"
               />
             </div>
             {errors.name && (
@@ -104,12 +104,12 @@ export default function CallbackModal({ isOpen, onClose }: CallbackModalProps) {
           {/* Phone */}
           <div>
             <div className="relative">
-              <Phone size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+              <Phone size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
               <input
                 {...register('phone')}
                 type="tel"
                 placeholder={tForm('phone')}
-                className="form-input pl-10"
+                className="form-input text-center placeholder:text-center"
               />
             </div>
             {errors.phone && (
@@ -136,12 +136,12 @@ export default function CallbackModal({ isOpen, onClose }: CallbackModalProps) {
           {/* Message */}
           <div>
             <div className="relative">
-              <MessageSquare size={18} className="absolute left-3 top-3 text-text-muted" />
+              <MessageSquare size={18} className="absolute left-4 top-4 text-text-muted" />
               <textarea
                 {...register('message')}
                 placeholder={tForm('messagePlaceholder')}
                 rows={3}
-                className="form-input pl-10 resize-none"
+                className="form-input text-center placeholder:text-center resize-none"
               />
             </div>
           </div>
