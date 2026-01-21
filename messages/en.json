@@ -24,10 +24,10 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "We repair various types of devices",
+    "subtitle": "We repair various types of devices: Apple, Samsung, Sony, Xiaomi",
     "laptop": {
       "title": "Laptops",
-      "description": "Display, keyboard, motherboard, fan repairs and software issues"
+      "description": "Display, keyboard, motherboard repairs, data recovery and software"
     },
     "phone": {
       "title": "Smartphones",
@@ -37,13 +37,13 @@
       "title": "Gaming Consoles",
       "description": "PlayStation, Xbox, Nintendo Switch - repair of all types of defects"
     },
-    "monitor": {
-      "title": "Monitors",
-      "description": "Backlight, power supply and display module repairs"
+    "tablet": {
+      "title": "Tablets",
+      "description": "iPad, Samsung Galaxy Tab - screen repair, battery and port replacement"
     }
   },
   "advantages": {
-    "title": "Why Choose Us?",
+    "title": "Why People Choose Us?",
     "subtitle": "Our advantages",
     "fast": {
       "title": "Fast Repair",

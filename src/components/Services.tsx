@@ -1,13 +1,13 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Laptop, Smartphone, Gamepad2, Monitor } from 'lucide-react';
+import { Laptop, Smartphone, Gamepad2, Tablet } from 'lucide-react';
 
 const services = [
   { key: 'laptop', icon: Laptop },
   { key: 'phone', icon: Smartphone },
   { key: 'console', icon: Gamepad2 },
-  { key: 'monitor', icon: Monitor },
+  { key: 'tablet', icon: Tablet },
 ];
 
 export default function Services() {
@@ -23,7 +23,7 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map(({ key, icon: Icon }) => (
-            <div key={key} className="card group text-center">
+            <div key={key} className="card group flex flex-col items-center text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20 rounded-2xl flex items-center justify-center group-hover:from-accent-blue/30 group-hover:to-accent-cyan/30 transition-colors duration-300">
                 <Icon size={32} className="text-accent-blue" />
               </div>

@@ -24,10 +24,10 @@
   },
   "services": {
     "title": "Nos services",
-    "subtitle": "Nous réparons différents types d'appareils",
+    "subtitle": "Nous réparons différents types d'appareils: Apple, Samsung, Sony, Xiaomi",
     "laptop": {
       "title": "Ordinateurs portables",
-      "description": "Réparation d'écrans, claviers, cartes mères, ventilateurs et problèmes logiciels"
+      "description": "Réparation d'écrans, claviers, cartes mères, récupération de données et logiciels"
     },
     "phone": {
       "title": "Smartphones",
@@ -37,9 +37,9 @@
       "title": "Consoles de jeux",
       "description": "PlayStation, Xbox, Nintendo Switch - réparation de tous types de défauts"
     },
-    "monitor": {
-      "title": "Moniteurs",
-      "description": "Réparation de rétroéclairage, alimentations et modules d'affichage"
+    "tablet": {
+      "title": "Tablettes",
+      "description": "iPad, Samsung Galaxy Tab - réparation d'écran, remplacement de batterie et ports"
     }
   },
   "advantages": {

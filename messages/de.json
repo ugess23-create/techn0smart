@@ -24,10 +24,10 @@
   },
   "services": {
     "title": "Unsere Leistungen",
-    "subtitle": "Wir reparieren verschiedene Arten von Geräten",
+    "subtitle": "Wir reparieren verschiedene Arten von Geräten: Apple, Samsung, Sony, Xiaomi",
     "laptop": {
       "title": "Laptops",
-      "description": "Reparatur von Displays, Tastaturen, Motherboards, Lüftern und Software-Problemen"
+      "description": "Reparatur von Displays, Tastaturen, Motherboards, Datenrettung und Software"
     },
     "phone": {
       "title": "Smartphones",
@@ -37,13 +37,13 @@
       "title": "Spielkonsolen",
       "description": "PlayStation, Xbox, Nintendo Switch - Reparatur aller Arten von Defekten"
     },
-    "monitor": {
-      "title": "Monitore",
-      "description": "Reparatur von Hintergrundbeleuchtung, Netzteilen und Displaymodulen"
+    "tablet": {
+      "title": "Tablets",
+      "description": "iPad, Samsung Galaxy Tab - Displayreparatur, Akku- und Anschlusstausch"
     }
   },
   "advantages": {
-    "title": "Warum wir?",
+    "title": "Warum uns wählen?",
     "subtitle": "Unsere Vorteile",
     "fast": {
       "title": "Schnelle Reparatur",

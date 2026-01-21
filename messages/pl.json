@@ -24,10 +24,10 @@
   },
   "services": {
     "title": "Nasze usługi",
-    "subtitle": "Naprawiamy różne rodzaje urządzeń",
+    "subtitle": "Naprawiamy różne rodzaje urządzeń: Apple, Samsung, Sony, Xiaomi",
     "laptop": {
       "title": "Laptopy",
-      "description": "Naprawa wyświetlaczy, klawiatur, płyt głównych, wentylatorów i problemów z oprogramowaniem"
+      "description": "Naprawa wyświetlaczy, klawiatur, płyt głównych, odzyskiwanie danych i oprogramowanie"
     },
     "phone": {
       "title": "Smartfony",
@@ -37,13 +37,13 @@
       "title": "Konsole do gier",
       "description": "PlayStation, Xbox, Nintendo Switch - naprawa wszystkich rodzajów usterek"
     },
-    "monitor": {
-      "title": "Monitory",
-      "description": "Naprawa podświetlenia, zasilaczy i modułów wyświetlacza"
+    "tablet": {
+      "title": "Tablety",
+      "description": "iPad, Samsung Galaxy Tab - naprawa ekranu, wymiana baterii i portów"
     }
   },
   "advantages": {
-    "title": "Dlaczego my?",
+    "title": "Dlaczego nas wybierają?",
     "subtitle": "Nasze zalety",
     "fast": {
       "title": "Szybka naprawa",

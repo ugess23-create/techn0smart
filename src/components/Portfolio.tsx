@@ -26,8 +26,8 @@ const portfolioItems = [
   },
   {
     id: 4,
-    title: 'Monitor Backlight Repair',
-    category: 'Monitors',
+    title: 'iPad Screen Repair',
+    category: 'Tablets',
     image: '/images/portfolio/placeholder-4.jpg',
   },
   {
@@ -76,7 +76,7 @@ export default function Portfolio() {
                     {item.category === 'Smartphones' && '📱'}
                     {item.category === 'Laptops' && '💻'}
                     {item.category === 'Consoles' && '🎮'}
-                    {item.category === 'Monitors' && '🖥️'}
+                    {item.category === 'Tablets' && '📱'}
                   </div>
                   <p className="text-text-secondary text-sm">{item.category}</p>
                 </div>
@@ -118,7 +118,7 @@ export default function Portfolio() {
                     {portfolioItems[selectedImage].category === 'Smartphones' && '📱'}
                     {portfolioItems[selectedImage].category === 'Laptops' && '💻'}
                     {portfolioItems[selectedImage].category === 'Consoles' && '🎮'}
-                    {portfolioItems[selectedImage].category === 'Monitors' && '🖥️'}
+                    {portfolioItems[selectedImage].category === 'Tablets' && '📱'}
                   </div>
                   <h3 className="text-xl font-semibold text-text-primary">
                     {portfolioItems[selectedImage].title}

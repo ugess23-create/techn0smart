@@ -21,18 +21,18 @@ export default function Advantages() {
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {advantages.map(({ key, icon: Icon }, index) => (
             <div
               key={key}
-              className="relative p-6 rounded-2xl bg-primary-800/50 border border-primary-700 hover:border-accent-blue transition-all duration-300 group overflow-hidden"
+              className="relative p-8 rounded-2xl bg-primary-800/50 border border-primary-700 hover:border-accent-blue transition-all duration-300 group overflow-hidden"
             >
               {/* Background gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/5 to-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col items-center text-center">
                 {/* Number */}
-                <div className="absolute -top-2 -right-2 w-12 h-12 bg-primary-700 rounded-full flex items-center justify-center text-2xl font-bold text-primary-500">
+                <div className="absolute -top-2 right-0 w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-xl font-bold text-primary-500">
                   {index + 1}
                 </div>
 
