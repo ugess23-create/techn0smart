@@ -177,11 +177,9 @@ export default function Contact() {
                 <label className="block text-text-secondary text-sm mb-2">{t('form.device')}</label>
                 <select {...register('device')} className="form-input">
                   <option value="">{t('form.devicePlaceholder')}</option>
-                  <option value="laptop">{t('form.laptop')}</option>
                   <option value="smartphone">{t('form.smartphone')}</option>
-                  <option value="console">{t('form.console')}</option>
-                  <option value="monitor">{t('form.monitor')}</option>
-                  <option value="headphones">{t('form.headphones')}</option>
+                  <option value="laptop">{t('form.laptop')}</option>
+                  <option value="tablet">{t('form.tablet')}</option>
                   <option value="other">{t('form.other')}</option>
                 </select>
                 {errors.device && (

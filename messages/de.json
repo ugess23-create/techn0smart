@@ -19,7 +19,7 @@
     "repair": "REPARATUR",
     "slogan": "Gerne für Sie da!",
     "description": "Schnell, zuverlässig und mit Garantie in Frankfurt am Main",
-    "cta": "Preis in 1 Minute erfahren",
+    "cta": "Schnelle Beratung",
     "trusted": "Über 2.000 zufriedene Kunden"
   },
   "services": {
@@ -40,10 +40,6 @@
     "monitor": {
       "title": "Monitore",
       "description": "Reparatur von Hintergrundbeleuchtung, Netzteilen und Displaymodulen"
-    },
-    "headphones": {
-      "title": "Kopfhörer",
-      "description": "Reparatur von Premium-Kopfhörern: Kabel, Treiber, Bügel"
     }
   },
   "advantages": {
@@ -111,14 +107,14 @@
       "phone": "Telefonnummer",
       "device": "Gerätetyp",
       "devicePlaceholder": "Wählen Sie Ihr Gerät",
+      "email": "E-Mail",
       "laptop": "Laptop",
       "smartphone": "Smartphone",
-      "console": "Spielkonsole",
-      "monitor": "Monitor",
-      "headphones": "Kopfhörer",
+      "tablet": "Tablet",
       "other": "Sonstiges",
       "message": "Problembeschreibung",
       "messagePlaceholder": "Beschreiben Sie kurz das Problem...",
+      "addPhoto": "Foto des Defekts hinzufügen",
       "privacy": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der Datenschutzerklärung zu",
       "submit": "Anfrage senden",
       "success": "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
@@ -126,9 +122,13 @@
     }
   },
   "callback": {
-    "title": "Preis in 1 Minute erfahren",
-    "subtitle": "Hinterlassen Sie Ihre Daten und wir rufen Sie sofort zurück",
-    "close": "Schließen"
+    "title": "Schnelle Beratung",
+    "subtitle": "Hinterlassen Sie Ihre Daten und wir kontaktieren Sie",
+    "close": "Schließen",
+    "newRequest": "Neue Anfrage von der Website",
+    "photoAttached": "Foto wird im Chat angehängt",
+    "photoHint": "Fügen Sie das Foto in WhatsApp hinzu, nachdem der Chat geöffnet wurde",
+    "sendWhatsApp": "Per WhatsApp senden"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",

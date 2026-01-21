@@ -32,15 +32,9 @@ const portfolioItems = [
   },
   {
     id: 5,
-    title: 'AirPods Pro Repair',
-    category: 'Headphones',
-    image: '/images/portfolio/placeholder-5.jpg',
-  },
-  {
-    id: 6,
     title: 'Nintendo Switch Fix',
     category: 'Consoles',
-    image: '/images/portfolio/placeholder-6.jpg',
+    image: '/images/portfolio/placeholder-5.jpg',
   },
 ];
 
@@ -83,7 +77,6 @@ export default function Portfolio() {
                     {item.category === 'Laptops' && '💻'}
                     {item.category === 'Consoles' && '🎮'}
                     {item.category === 'Monitors' && '🖥️'}
-                    {item.category === 'Headphones' && '🎧'}
                   </div>
                   <p className="text-text-secondary text-sm">{item.category}</p>
                 </div>
@@ -126,7 +119,6 @@ export default function Portfolio() {
                     {portfolioItems[selectedImage].category === 'Laptops' && '💻'}
                     {portfolioItems[selectedImage].category === 'Consoles' && '🎮'}
                     {portfolioItems[selectedImage].category === 'Monitors' && '🖥️'}
-                    {portfolioItems[selectedImage].category === 'Headphones' && '🎧'}
                   </div>
                   <h3 className="text-xl font-semibold text-text-primary">
                     {portfolioItems[selectedImage].title}

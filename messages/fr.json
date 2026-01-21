@@ -19,7 +19,7 @@
     "repair": "RÉPARATION",
     "slogan": "À votre service!",
     "description": "Rapide, fiable et avec garantie à Francfort-sur-le-Main",
-    "cta": "Obtenez un devis en 1 minute",
+    "cta": "Consultation rapide",
     "trusted": "Plus de 2 000 clients satisfaits"
   },
   "services": {
@@ -40,10 +40,6 @@
     "monitor": {
       "title": "Moniteurs",
       "description": "Réparation de rétroéclairage, alimentations et modules d'affichage"
-    },
-    "headphones": {
-      "title": "Écouteurs",
-      "description": "Réparation d'écouteurs premium : câbles, drivers, arceaux"
     }
   },
   "advantages": {
@@ -111,14 +107,14 @@
       "phone": "Numéro de téléphone",
       "device": "Type d'appareil",
       "devicePlaceholder": "Sélectionnez votre appareil",
+      "email": "Email",
       "laptop": "Ordinateur portable",
       "smartphone": "Smartphone",
-      "console": "Console de jeux",
-      "monitor": "Moniteur",
-      "headphones": "Écouteurs",
+      "tablet": "Tablette",
       "other": "Autre",
       "message": "Description du problème",
       "messagePlaceholder": "Décrivez brièvement le problème...",
+      "addPhoto": "Ajouter une photo du problème",
       "privacy": "J'accepte le traitement de mes données personnelles conformément à la Politique de confidentialité",
       "submit": "Envoyer la demande",
       "success": "Merci ! Nous vous contacterons bientôt.",
@@ -126,9 +122,13 @@
     }
   },
   "callback": {
-    "title": "Obtenez un devis en 1 minute",
-    "subtitle": "Laissez vos coordonnées et nous vous rappellerons immédiatement",
-    "close": "Fermer"
+    "title": "Consultation rapide",
+    "subtitle": "Laissez vos coordonnées et nous vous contacterons",
+    "close": "Fermer",
+    "newRequest": "Nouvelle demande du site",
+    "photoAttached": "La photo sera jointe dans le chat",
+    "photoHint": "Joignez la photo dans WhatsApp après l'ouverture du chat",
+    "sendWhatsApp": "Envoyer via WhatsApp"
   },
   "footer": {
     "rights": "Tous droits réservés",

@@ -102,8 +102,8 @@ export default function Hero() {
             <Image
               src="https://pngimg.com/d/macbook_PNG75.png"
               alt="MacBook"
-              width={180}
-              height={120}
+              width={150}
+              height={100}
               className="object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.1)]"
             />
             <Image

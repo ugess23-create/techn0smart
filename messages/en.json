@@ -19,7 +19,7 @@
     "repair": "REPAIR",
     "slogan": "Happy to help you!",
     "description": "Fast, reliable service with warranty in Frankfurt am Main",
-    "cta": "Get a Quote in 1 Minute",
+    "cta": "Quick Consultation",
     "trusted": "Over 2,000 satisfied customers"
   },
   "services": {
@@ -40,10 +40,6 @@
     "monitor": {
       "title": "Monitors",
       "description": "Backlight, power supply and display module repairs"
-    },
-    "headphones": {
-      "title": "Headphones",
-      "description": "Premium headphone repair: cables, drivers, headbands"
     }
   },
   "advantages": {
@@ -111,14 +107,14 @@
       "phone": "Phone Number",
       "device": "Device Type",
       "devicePlaceholder": "Select your device",
+      "email": "Email",
       "laptop": "Laptop",
       "smartphone": "Smartphone",
-      "console": "Gaming Console",
-      "monitor": "Monitor",
-      "headphones": "Headphones",
+      "tablet": "Tablet",
       "other": "Other",
       "message": "Problem Description",
       "messagePlaceholder": "Briefly describe the problem...",
+      "addPhoto": "Add photo of the issue",
       "privacy": "I agree to the processing of my personal data according to the Privacy Policy",
       "submit": "Send Request",
       "success": "Thank you! We will contact you shortly.",
@@ -126,9 +122,13 @@
     }
   },
   "callback": {
-    "title": "Get a Quote in 1 Minute",
-    "subtitle": "Leave your details and we will call you back immediately",
-    "close": "Close"
+    "title": "Quick Consultation",
+    "subtitle": "Leave your details and we will contact you",
+    "close": "Close",
+    "newRequest": "New request from website",
+    "photoAttached": "Photo will be attached in chat",
+    "photoHint": "Attach photo in WhatsApp after chat opens",
+    "sendWhatsApp": "Send via WhatsApp"
   },
   "footer": {
     "rights": "All rights reserved",

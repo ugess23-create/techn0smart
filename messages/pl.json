@@ -19,7 +19,7 @@
     "repair": "NAPRAWA",
     "slogan": "Chętnie Ci pomożemy!",
     "description": "Szybko, niezawodnie i z gwarancją we Frankfurcie nad Menem",
-    "cta": "Poznaj cenę w 1 minutę",
+    "cta": "Szybka konsultacja",
     "trusted": "Ponad 2 000 zadowolonych klientów"
   },
   "services": {
@@ -40,10 +40,6 @@
     "monitor": {
       "title": "Monitory",
       "description": "Naprawa podświetlenia, zasilaczy i modułów wyświetlacza"
-    },
-    "headphones": {
-      "title": "Słuchawki",
-      "description": "Naprawa słuchawek premium: kable, przetworniki, pałąki"
     }
   },
   "advantages": {
@@ -111,14 +107,14 @@
       "phone": "Numer telefonu",
       "device": "Typ urządzenia",
       "devicePlaceholder": "Wybierz urządzenie",
+      "email": "Email",
       "laptop": "Laptop",
       "smartphone": "Smartfon",
-      "console": "Konsola do gier",
-      "monitor": "Monitor",
-      "headphones": "Słuchawki",
+      "tablet": "Tablet",
       "other": "Inne",
       "message": "Opis problemu",
       "messagePlaceholder": "Krótko opisz problem...",
+      "addPhoto": "Dodaj zdjęcie usterki",
       "privacy": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z Polityką prywatności",
       "submit": "Wyślij zapytanie",
       "success": "Dziękujemy! Wkrótce się z Tobą skontaktujemy.",
@@ -126,9 +122,13 @@
     }
   },
   "callback": {
-    "title": "Poznaj cenę w 1 minutę",
-    "subtitle": "Zostaw swoje dane, a natychmiast oddzwonimy",
-    "close": "Zamknij"
+    "title": "Szybka konsultacja",
+    "subtitle": "Zostaw swoje dane, a skontaktujemy się z Tobą",
+    "close": "Zamknij",
+    "newRequest": "Nowe zapytanie ze strony",
+    "photoAttached": "Zdjęcie zostanie dołączone w czacie",
+    "photoHint": "Dołącz zdjęcie w WhatsApp po otwarciu czatu",
+    "sendWhatsApp": "Wyślij przez WhatsApp"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone",

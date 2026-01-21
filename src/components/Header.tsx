@@ -22,19 +22,17 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-gray-800 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-18 md:h-24">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <a href="#" className="flex items-center group">
-            <div className="relative px-4 py-2 rounded-2xl bg-gradient-to-r from-gray-900/50 to-black/30 border border-gray-700/30 group-hover:border-accent-cyan/40 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition-all duration-500 ease-out">
-              <Image
-                src="/logo.png"
-                alt="Technosmart"
-                width={280}
-                height={80}
-                className="h-14 md:h-18 w-auto drop-shadow-[0_0_12px_rgba(34,211,238,0.2)] transition-transform duration-300 group-hover:scale-105"
-                priority
-              />
-            </div>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Technosmart"
+              width={400}
+              height={100}
+              className="h-16 md:h-20 w-auto scale-x-125 origin-left brightness-100 hover:brightness-110 transition-all duration-300"
+              priority
+            />
           </a>
 
           {/* Desktop Navigation */}

@@ -23,16 +23,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="mb-6 inline-block">
-              <div className="px-4 py-2 rounded-2xl bg-gradient-to-r from-primary-800/60 to-transparent border border-primary-700/30">
-                <Image
-                  src="/logo.png"
-                  alt="Technosmart"
-                  width={260}
-                  height={70}
-                  className="h-14 md:h-16 w-auto drop-shadow-[0_0_10px_rgba(34,211,238,0.25)]"
-                />
-              </div>
+            <div className="mb-6">
+              <Image
+                src="/logo.png"
+                alt="Technosmart"
+                width={320}
+                height={80}
+                className="h-16 md:h-20 w-auto scale-x-110 brightness-100 hover:brightness-110 transition-all duration-300"
+              />
             </div>
             <p className="text-text-secondary max-w-md mb-4">
               Professionelle Reparatur von Laptops, Smartphones, Spielkonsolen, Monitoren und Kopfhörern in Frankfurt am Main.
