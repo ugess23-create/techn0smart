@@ -85,14 +85,16 @@ export default function Hero() {
             {/* Right - iPhone PNG */}
             <div className="lg:col-span-4 relative hidden lg:flex justify-center items-center">
               <div className="relative">
-                {/* Subtle glow behind phone */}
-                <div className="absolute inset-0 bg-accent-cyan/10 blur-3xl rounded-full scale-75" />
                 <Image
-                  src="https://pngimg.com/d/iphone_14_PNG39.png"
+                  src="/images/iphone-hero.png"
                   alt="iPhone"
                   width={280}
                   height={500}
-                  className="object-contain relative z-10 drop-shadow-[0_0_40px_rgba(34,211,238,0.15)]"
+                  className="object-contain relative z-10 opacity-90"
+                  style={{
+                    maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+                  }}
                   priority
                 />
               </div>
@@ -113,11 +115,15 @@ export default function Hero() {
               }}
             />
             <Image
-              src="https://pngimg.com/d/iphone_14_PNG39.png"
+              src="/images/iphone-hero.png"
               alt="iPhone"
               width={80}
               height={160}
-              className="object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.1)]"
+              className="object-contain opacity-90"
+              style={{
+                maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+                WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+              }}
             />
           </div>
         </div>
