@@ -33,7 +33,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-text-secondary max-w-md mb-4">
-              Professionelle Reparatur von Laptops, Smartphones, Spielkonsolen, Monitoren und Kopfhörern in Frankfurt am Main.
+              {t('description')}
             </p>
             <div className="flex gap-4">
               <a
