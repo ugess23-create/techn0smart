@@ -71,27 +71,30 @@
     "subtitle": "Was unsere Kunden sagen"
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Antworten auf Ihre Fragen",
+    "title": "Die häufigsten Fragen",
     "q1": {
-      "question": "Wie lange dauert die Reparatur?",
-      "answer": "Die meisten Reparaturen werden innerhalb von 1-2 Werktagen durchgeführt. Komplexe Fälle können länger dauern, worüber wir Sie im Voraus informieren."
+      "question": "Stimmt es, dass die Diagnose kostenlos ist?",
+      "answer": "Ja"
     },
     "q2": {
-      "question": "Bieten Sie Garantie auf die Reparatur?",
-      "answer": "Ja, wir bieten Garantie auf alle durchgeführten Arbeiten und eingebauten Ersatzteile gemäß deutschem Recht."
+      "question": "Wie lange dauert ein iPhone Akkutausch?",
+      "answer": "Eine Stunde"
     },
     "q3": {
-      "question": "Wie kann ich den Preis erfahren?",
-      "answer": "Klicken Sie auf die Schaltfläche 'Preis in 1 Minute erfahren' und hinterlassen Sie Ihre Kontaktdaten. Wir rufen Sie zurück und nennen den genauen Preis."
+      "question": "Kann ich Daten vom Laptop wiederherstellen, auch wenn die Software kaputt ist?",
+      "answer": "Fast immer möglich"
     },
     "q4": {
-      "question": "Reparieren Sie auch ältere Geräte?",
-      "answer": "Wir konzentrieren uns auf moderne Technik. Sehr alte oder veraltete Geräte reparieren wir nicht, da dies wirtschaftlich nicht sinnvoll ist."
+      "question": "Geben Sie Garantie auf die Reparatur?",
+      "answer": "Ja, ab 1 Monat"
     },
     "q5": {
-      "question": "Kann ich mein Gerät vor Ort abgeben?",
-      "answer": "Ja, Sie können Ihr Gerät in unserer Werkstatt in der Offenbacher Landstraße 306 abgeben. Wir sind Mo-Sa von 11:00 bis 19:00 Uhr für Sie da."
+      "question": "Arbeiten Sie am Wochenende?",
+      "answer": "Mo-Sa, So geschlossen"
+    },
+    "q6": {
+      "question": "Kann man Technik zu Hause reparieren lassen?",
+      "answer": "Nein, kein Vor-Ort-Service"
     }
   },
   "contact": {

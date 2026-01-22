@@ -71,27 +71,30 @@
     "subtitle": "Co mówią nasi klienci"
   },
   "faq": {
-    "title": "Często zadawane pytania",
-    "subtitle": "Odpowiedzi na Twoje pytania",
+    "title": "Najczęściej zadawane pytania",
     "q1": {
-      "question": "Jak długo trwa naprawa?",
-      "answer": "Większość napraw jest wykonywana w ciągu 1-2 dni roboczych. Skomplikowane przypadki mogą trwać dłużej, o czym poinformujemy z wyprzedzeniem."
+      "question": "Czy diagnostyka jest naprawdę bezpłatna?",
+      "answer": "Tak"
     },
     "q2": {
-      "question": "Czy udzielacie gwarancji na naprawy?",
-      "answer": "Tak, udzielamy gwarancji na wszystkie wykonane prace i zainstalowane części zgodnie z prawem niemieckim."
+      "question": "Ile trwa wymiana baterii w iPhone?",
+      "answer": "Godzina"
     },
     "q3": {
-      "question": "Jak mogę poznać cenę?",
-      "answer": "Kliknij przycisk 'Poznaj cenę w 1 minutę' i zostaw swoje dane kontaktowe. Oddzwonimy i podamy dokładną cenę."
+      "question": "Czy mogę odzyskać dane z laptopa, nawet jeśli system jest uszkodzony?",
+      "answer": "Prawie zawsze możliwe"
     },
     "q4": {
-      "question": "Czy naprawiacie starsze urządzenia?",
-      "answer": "Koncentrujemy się na nowoczesnej technologii. Nie naprawiamy bardzo starych lub przestarzałych urządzeń, ponieważ nie jest to ekonomicznie opłacalne."
+      "question": "Czy udzielacie gwarancji na naprawę?",
+      "answer": "Tak, od 1 miesiąca"
     },
     "q5": {
-      "question": "Czy mogę dostarczyć urządzenie osobiście?",
-      "answer": "Tak, możesz przynieść swoje urządzenie do naszego warsztatu przy Offenbacher Landstraße 306. Jesteśmy otwarci od poniedziałku do soboty w godzinach 11:00-19:00."
+      "question": "Czy pracujecie w weekendy?",
+      "answer": "Pn-Sb, Nd zamknięte"
+    },
+    "q6": {
+      "question": "Czy można naprawić sprzęt w domu?",
+      "answer": "Nie, nie wyjeżdżamy"
     }
   },
   "contact": {

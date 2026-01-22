@@ -71,27 +71,30 @@
     "subtitle": "Ce que disent nos clients"
   },
   "faq": {
-    "title": "Questions fréquentes",
-    "subtitle": "Réponses à vos questions",
+    "title": "Les questions les plus fréquentes",
     "q1": {
-      "question": "Combien de temps dure la réparation ?",
-      "answer": "La plupart des réparations sont effectuées en 1-2 jours ouvrables. Les cas complexes peuvent prendre plus de temps, nous vous informerons à l'avance."
+      "question": "Le diagnostic est-il vraiment gratuit ?",
+      "answer": "Oui"
     },
     "q2": {
-      "question": "Offrez-vous une garantie sur les réparations ?",
-      "answer": "Oui, nous offrons une garantie sur tous les travaux effectués et les pièces installées conformément à la loi allemande."
+      "question": "Combien de temps prend le remplacement de batterie iPhone ?",
+      "answer": "Une heure"
     },
     "q3": {
-      "question": "Comment puis-je obtenir un devis ?",
-      "answer": "Cliquez sur le bouton 'Obtenez un devis en 1 minute' et laissez vos coordonnées. Nous vous rappellerons et vous donnerons le prix exact."
+      "question": "Puis-je récupérer les données d'un ordinateur portable même si le logiciel est endommagé ?",
+      "answer": "Presque toujours possible"
     },
     "q4": {
-      "question": "Réparez-vous les anciens appareils ?",
-      "answer": "Nous nous concentrons sur la technologie moderne. Nous ne réparons pas les appareils très anciens ou obsolètes car ce n'est pas économiquement viable."
+      "question": "Offrez-vous une garantie sur les réparations ?",
+      "answer": "Oui, à partir d'1 mois"
     },
     "q5": {
-      "question": "Puis-je déposer mon appareil en personne ?",
-      "answer": "Oui, vous pouvez apporter votre appareil à notre atelier au Offenbacher Landstraße 306. Nous sommes ouverts du lundi au samedi de 11h00 à 19h00."
+      "question": "Travaillez-vous le week-end ?",
+      "answer": "Lun-Sam, Dim fermé"
+    },
+    "q6": {
+      "question": "Pouvez-vous réparer les appareils à domicile ?",
+      "answer": "Non, pas de service à domicile"
     }
   },
   "contact": {

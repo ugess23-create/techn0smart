@@ -1,54 +1,34 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
-const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5'];
+const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
 
 export default function FAQ() {
   const t = useTranslations('faq');
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const toggleItem = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <section id="faq" className="section bg-primary-900">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="section-title">{t('title')}</h2>
-          <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
-          {faqKeys.map((key, index) => (
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {faqKeys.map((key) => (
             <div
               key={key}
-              className="bg-primary-800 rounded-xl border border-primary-700 overflow-hidden"
+              className="bg-primary-800 rounded-2xl border border-primary-700 p-8 hover:border-accent-blue/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent-blue/10"
             >
-              <button
-                onClick={() => toggleItem(index)}
-                className="w-full flex items-center justify-between p-5 text-left hover:bg-primary-700/50 transition-colors"
-              >
-                <span className="font-medium text-text-primary pr-4">
+              <div className="flex items-start gap-3 mb-4">
+                <CheckCircle className="text-accent-blue flex-shrink-0 mt-1" size={24} />
+                <h3 className="font-semibold text-lg text-text-primary leading-tight">
                   {t(`${key}.question`)}
-                </span>
-                <ChevronDown
-                  size={20}
-                  className={`text-accent-blue flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
-              >
-                <p className="px-5 pb-5 text-text-secondary">
+                </h3>
+              </div>
+              <div className="pl-9">
+                <p className="text-2xl font-bold text-accent-blue">
                   {t(`${key}.answer`)}
                 </p>
               </div>
