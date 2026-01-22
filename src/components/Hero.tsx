@@ -23,14 +23,16 @@ export default function Hero() {
             {/* Left - MacBook PNG */}
             <div className="lg:col-span-4 relative hidden lg:flex justify-center items-center">
               <div className="relative">
-                {/* Subtle glow behind laptop */}
-                <div className="absolute inset-0 bg-accent-cyan/10 blur-3xl rounded-full scale-75" />
                 <Image
-                  src="https://pngimg.com/d/macbook_PNG75.png"
+                  src="/images/macbooks-hero.png"
                   alt="MacBook"
-                  width={420}
-                  height={280}
-                  className="object-contain relative z-10 drop-shadow-[0_0_40px_rgba(34,211,238,0.15)]"
+                  width={520}
+                  height={290}
+                  className="object-contain relative z-10 opacity-90"
+                  style={{
+                    maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+                  }}
                   priority
                 />
               </div>
@@ -100,11 +102,15 @@ export default function Hero() {
           {/* Mobile devices - only on small screens */}
           <div className="lg:hidden flex justify-center items-center gap-6 mb-8">
             <Image
-              src="https://pngimg.com/d/macbook_PNG75.png"
+              src="/images/macbooks-hero.png"
               alt="MacBook"
-              width={150}
-              height={100}
-              className="object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.1)]"
+              width={200}
+              height={112}
+              className="object-contain opacity-90"
+              style={{
+                maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+                WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+              }}
             />
             <Image
               src="https://pngimg.com/d/iphone_14_PNG39.png"
