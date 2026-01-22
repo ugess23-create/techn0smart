@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-text-primary font-semibold mb-4">Kontakt</h3>
+            <h3 className="text-text-primary font-semibold mb-4">{t('contactTitle')}</h3>
             <ul className="space-y-2 text-text-secondary">
               <li>
                 <a href="tel:+4915259137289" className="hover:text-accent-blue transition-colors">
@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-text-primary font-semibold mb-4">Rechtliches</h3>
+            <h3 className="text-text-primary font-semibold mb-4">{t('legalTitle')}</h3>
             <ul className="space-y-2">
               {legalLinks.map(({ href, label }) => (
                 <li key={href}>

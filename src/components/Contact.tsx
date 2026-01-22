@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -15,11 +15,15 @@ import {
   Loader2,
   CheckCircle,
   AlertCircle,
+  Camera,
+  X,
 } from 'lucide-react';
+import Image from 'next/image';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required'),
   phone: z.string().min(5, 'Phone is required'),
+  email: z.string().email('Invalid email').optional().or(z.literal('')),
   device: z.string().min(1, 'Please select a device'),
   message: z.string().optional(),
   privacy: z.boolean().refine((val) => val === true, 'You must accept the privacy policy'),
@@ -30,6 +34,9 @@ type FormData = z.infer<typeof formSchema>;
 export default function Contact() {
   const t = useTranslations('contact');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [photoPreview, setPhotoPreview] = useState<string | null>(null);
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const {
     register,
@@ -40,23 +47,74 @@ export default function Contact() {
     resolver: zodResolver(formSchema),
   });
 
+  const handlePhotoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setPhotoFile(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPhotoPreview(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const removePhoto = () => {
+    setPhotoPreview(null);
+    setPhotoFile(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const getDeviceLabel = (device: string) => {
+    const labels: Record<string, string> = {
+      smartphone: t('form.smartphone'),
+      laptop: t('form.laptop'),
+      tablet: t('form.tablet'),
+      other: t('form.other'),
+    };
+    return labels[device] || device;
+  };
+
   const onSubmit = async (data: FormData) => {
     setStatus('loading');
     try {
-      const response = await fetch('/api/contact', {
+      const formData = new FormData();
+      formData.append('name', data.name);
+      formData.append('phone', data.phone);
+      formData.append('device', data.device);
+      formData.append('deviceLabel', getDeviceLabel(data.device));
+
+      if (data.email) {
+        formData.append('email', data.email);
+      }
+
+      if (data.message) {
+        formData.append('message', data.message);
+      }
+
+      if (photoFile) {
+        formData.append('photo', photoFile);
+      }
+
+      const response = await fetch('/api/telegram', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
       if (response.ok) {
         setStatus('success');
         reset();
+        removePhoto();
+        setTimeout(() => setStatus('idle'), 3000);
       } else {
         setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
       }
     } catch {
       setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
     }
   };
 
@@ -149,6 +207,7 @@ export default function Contact() {
                     {...register('name')}
                     type="text"
                     className="form-input text-center"
+                    disabled={status === 'loading'}
                   />
                 </div>
                 {errors.name && (
@@ -165,6 +224,7 @@ export default function Contact() {
                     {...register('phone')}
                     type="tel"
                     className="form-input text-center"
+                    disabled={status === 'loading'}
                   />
                 </div>
                 {errors.phone && (
@@ -172,10 +232,27 @@ export default function Contact() {
                 )}
               </div>
 
+              {/* Email */}
+              <div>
+                <label className="block text-text-secondary text-sm mb-2">{t('form.email')}</label>
+                <div className="relative">
+                  <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
+                  <input
+                    {...register('email')}
+                    type="email"
+                    className="form-input text-center"
+                    disabled={status === 'loading'}
+                  />
+                </div>
+                {errors.email && (
+                  <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>
+                )}
+              </div>
+
               {/* Device */}
               <div>
                 <label className="block text-text-secondary text-sm mb-2">{t('form.device')}</label>
-                <select {...register('device')} className="form-input">
+                <select {...register('device')} className="form-input" disabled={status === 'loading'}>
                   <option value="">{t('form.devicePlaceholder')}</option>
                   <option value="smartphone">{t('form.smartphone')}</option>
                   <option value="laptop">{t('form.laptop')}</option>
@@ -197,8 +274,52 @@ export default function Contact() {
                     placeholder={t('form.messagePlaceholder')}
                     rows={4}
                     className="form-input text-center placeholder:text-center resize-none"
+                    disabled={status === 'loading'}
                   />
                 </div>
+              </div>
+
+              {/* Photo Upload */}
+              <div>
+                <label className="block text-text-secondary text-sm mb-2">{t('form.addPhoto')}</label>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePhotoChange}
+                  className="hidden"
+                  id="photo-upload-contact"
+                  disabled={status === 'loading'}
+                />
+
+                {photoPreview ? (
+                  <div className="relative">
+                    <div className="relative w-full h-32 rounded-lg overflow-hidden border border-primary-600">
+                      <Image
+                        src={photoPreview}
+                        alt="Preview"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={removePhoto}
+                      className="absolute top-2 right-2 p-1 bg-red-500 rounded-full hover:bg-red-600 transition-colors"
+                      disabled={status === 'loading'}
+                    >
+                      <X size={16} className="text-white" />
+                    </button>
+                  </div>
+                ) : (
+                  <label
+                    htmlFor="photo-upload-contact"
+                    className={`flex items-center justify-center gap-2 p-4 border-2 border-dashed border-primary-600 rounded-lg cursor-pointer hover:border-accent-cyan hover:bg-primary-700/50 transition-colors ${status === 'loading' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  >
+                    <Camera size={20} className="text-text-muted" />
+                    <span className="text-text-secondary text-sm">{t('form.addPhoto')}</span>
+                  </label>
+                )}
               </div>
 
               {/* Privacy */}
@@ -208,6 +329,7 @@ export default function Contact() {
                     {...register('privacy')}
                     type="checkbox"
                     className="mt-1 w-4 h-4 rounded border-primary-600 bg-primary-700 text-accent-blue focus:ring-accent-blue"
+                    disabled={status === 'loading'}
                   />
                   <span className="text-sm text-text-secondary">{t('form.privacy')}</span>
                 </label>

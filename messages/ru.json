@@ -134,6 +134,8 @@
     "sendWhatsApp": "Написать в WhatsApp"
   },
   "footer": {
+    "contactTitle": "Контакты",
+    "legalTitle": "Юридическая информация",
     "rights": "Все права защищены",
     "impressum": "Импрессум",
     "privacy": "Политика конфиденциальности",

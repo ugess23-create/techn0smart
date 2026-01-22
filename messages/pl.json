@@ -134,6 +134,8 @@
     "sendWhatsApp": "Wyślij przez WhatsApp"
   },
   "footer": {
+    "contactTitle": "Kontakt",
+    "legalTitle": "Informacje prawne",
     "rights": "Wszelkie prawa zastrzeżone",
     "impressum": "Impressum",
     "privacy": "Polityka prywatności",
