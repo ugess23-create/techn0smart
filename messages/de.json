@@ -78,11 +78,11 @@
     },
     "q2": {
       "question": "Wie lange dauert ein iPhone Akkutausch?",
-      "answer": "Eine Stunde"
+      "answer": "Nur 1 Stunde"
     },
     "q3": {
       "question": "Kann ich Daten vom Laptop wiederherstellen, auch wenn die Software kaputt ist?",
-      "answer": "Fast immer möglich"
+      "answer": "Fast immer ja"
     },
     "q4": {
       "question": "Geben Sie Garantie auf die Reparatur?",
@@ -90,7 +90,7 @@
     },
     "q5": {
       "question": "Arbeiten Sie am Wochenende?",
-      "answer": "Mo-Sa, So geschlossen"
+      "answer": "Sonntag geschlossen"
     },
     "q6": {
       "question": "Kann man Technik zu Hause reparieren lassen?",

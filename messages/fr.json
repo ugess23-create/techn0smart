@@ -78,11 +78,11 @@
     },
     "q2": {
       "question": "Combien de temps prend le remplacement de batterie iPhone ?",
-      "answer": "Une heure"
+      "answer": "Seulement 1 heure"
     },
     "q3": {
       "question": "Puis-je récupérer les données d'un ordinateur portable même si le logiciel est endommagé ?",
-      "answer": "Presque toujours possible"
+      "answer": "Presque toujours oui"
     },
     "q4": {
       "question": "Offrez-vous une garantie sur les réparations ?",
@@ -90,7 +90,7 @@
     },
     "q5": {
       "question": "Travaillez-vous le week-end ?",
-      "answer": "Lun-Sam, Dim fermé"
+      "answer": "Dimanche fermé"
     },
     "q6": {
       "question": "Pouvez-vous réparer les appareils à domicile ?",

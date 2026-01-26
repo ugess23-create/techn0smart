@@ -78,11 +78,11 @@
     },
     "q2": {
       "question": "How long does iPhone battery replacement take?",
-      "answer": "One hour"
+      "answer": "Just 1 hour"
     },
     "q3": {
       "question": "Can I recover data from a laptop even if the software crashed?",
-      "answer": "Almost always possible"
+      "answer": "Almost always yes"
     },
     "q4": {
       "question": "Do you provide warranty on repairs?",
@@ -90,7 +90,7 @@
     },
     "q5": {
       "question": "Do you work on weekends?",
-      "answer": "Mon-Sat, Sun closed"
+      "answer": "Sunday closed"
     },
     "q6": {
       "question": "Can you repair devices at home?",

@@ -19,19 +19,17 @@ export default function FAQ() {
           {faqKeys.map((key) => (
             <div
               key={key}
-              className="bg-primary-800 rounded-2xl border border-primary-700 p-8 hover:border-accent-blue/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent-blue/10"
+              className="bg-primary-800 rounded-2xl border border-primary-700 p-6 hover:border-accent-blue/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent-blue/10 aspect-square flex flex-col justify-center items-center text-center"
             >
-              <div className="flex items-start gap-3 mb-4">
-                <CheckCircle className="text-accent-blue flex-shrink-0 mt-1" size={24} />
-                <h3 className="font-semibold text-lg text-text-primary leading-tight">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <CheckCircle className="text-accent-blue flex-shrink-0" size={20} />
+                <h3 className="text-sm text-accent-blue leading-tight">
                   {t(`${key}.question`)}
                 </h3>
               </div>
-              <div className="pl-9">
-                <p className="text-2xl font-bold text-accent-blue">
-                  {t(`${key}.answer`)}
-                </p>
-              </div>
+              <p className="text-3xl font-bold text-text-primary">
+                {t(`${key}.answer`)}
+              </p>
             </div>
           ))}
         </div>

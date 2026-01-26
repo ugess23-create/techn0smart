@@ -36,7 +36,7 @@ export default function ImpressumPage() {
           <h2 className="text-xl font-semibold text-text-primary mb-3">Umsatzsteuer-ID</h2>
           <p>
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            <span className="text-accent-blue">[USt-IdNr. wird nachgetragen]</span>
+            <span className="text-accent-blue">DE455133848</span>
           </p>
         </section>
 

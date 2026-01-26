@@ -78,11 +78,11 @@
     },
     "q2": {
       "question": "Ile trwa wymiana baterii w iPhone?",
-      "answer": "Godzina"
+      "answer": "Tylko 1 godzina"
     },
     "q3": {
       "question": "Czy mogę odzyskać dane z laptopa, nawet jeśli system jest uszkodzony?",
-      "answer": "Prawie zawsze możliwe"
+      "answer": "Prawie zawsze tak"
     },
     "q4": {
       "question": "Czy udzielacie gwarancji na naprawę?",
@@ -90,7 +90,7 @@
     },
     "q5": {
       "question": "Czy pracujecie w weekendy?",
-      "answer": "Pn-Sb, Nd zamknięte"
+      "answer": "Niedziela zamknięte"
     },
     "q6": {
       "question": "Czy można naprawić sprzęt w domu?",
