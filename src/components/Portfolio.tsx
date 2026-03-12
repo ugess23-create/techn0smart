@@ -1,154 +1,264 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useRef, useCallback } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
-// Placeholder portfolio items - replace with real images
-const portfolioItems = [
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+type WorkItem = {
+  id: number;
+  title: string;
+  before: string;
+  after: string;
+};
+
+// ─── Data ─────────────────────────────────────────────────────────────────────
+
+const phoneWorks: WorkItem[] = [
   {
     id: 1,
-    title: 'iPhone Screen Replacement',
-    category: 'Smartphones',
-    image: '/images/portfolio/placeholder-1.jpg',
+    title: 'Замена задней крышки iPhone',
+    before: '/images/portfolio/iphone-back-before.jpg',
+    after: '/images/portfolio/iphone-back-after.jpg',
   },
   {
     id: 2,
-    title: 'MacBook Pro Repair',
-    category: 'Laptops',
-    image: '/images/portfolio/placeholder-2.jpg',
+    title: 'Замена дисплея iPhone',
+    before: '/images/portfolio/iphone-display-before.jpg',
+    after: '/images/portfolio/iphone-display-after.jpg',
   },
   {
     id: 3,
-    title: 'PS5 HDMI Fix',
-    category: 'Consoles',
-    image: '/images/portfolio/placeholder-3.jpg',
-  },
-  {
-    id: 4,
-    title: 'iPad Screen Repair',
-    category: 'Tablets',
-    image: '/images/portfolio/placeholder-4.jpg',
-  },
-  {
-    id: 5,
-    title: 'Nintendo Switch Fix',
-    category: 'Consoles',
-    image: '/images/portfolio/placeholder-5.jpg',
+    title: 'Замена батареи iPhone',
+    before: '/images/portfolio/iphone-battery-before.jpg',
+    after: '/images/portfolio/iphone-battery-after.jpg',
   },
 ];
 
+const laptopWorks: WorkItem[] = [
+  {
+    id: 1,
+    title: 'Чистка ноутбука и замена термопасты',
+    before: '/images/portfolio/laptop-cleaning-before.jpg',
+    after: '/images/portfolio/laptop-cleaning-after.jpg',
+  },
+];
+
+// ─── Before/After Slider ──────────────────────────────────────────────────────
+
+type SliderProps = {
+  before: string;
+  after: string;
+  title: string;
+  aspectClass?: string;
+};
+
+function BeforeAfterSlider({ before, after, title, aspectClass = 'aspect-[3/4]' }: SliderProps) {
+  const [sliderPos, setSliderPos] = useState(50);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+
+  const updateSlider = useCallback((clientX: number) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const pos = Math.min(Math.max(((clientX - rect.left) / rect.width) * 100, 0), 100);
+    setSliderPos(pos);
+  }, []);
+
+  const onMouseDown = () => { isDragging.current = true; };
+  const onMouseMove = (e: React.MouseEvent) => { if (isDragging.current) updateSlider(e.clientX); };
+  const onMouseUp = () => { isDragging.current = false; };
+  const onTouchStart = (e: React.TouchEvent) => { e.preventDefault(); updateSlider(e.touches[0].clientX); };
+  const onTouchMove = (e: React.TouchEvent) => { e.preventDefault(); updateSlider(e.touches[0].clientX); };
+
+  return (
+    <div className="rounded-2xl overflow-hidden bg-primary-800 shadow-xl">
+      <div
+        ref={containerRef}
+        className={`relative ${aspectClass} select-none cursor-ew-resize overflow-hidden`}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseUp}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+      >
+        {/* Before */}
+        <div className="absolute inset-0">
+          <Image
+            src={before}
+            alt="До"
+            fill
+            className="object-cover pointer-events-none"
+            sizes="(max-width: 768px) 100vw, 600px"
+          />
+          <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wider">
+            ДО
+          </div>
+        </div>
+
+        {/* After */}
+        <div
+          className="absolute inset-0"
+          style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
+        >
+          <Image
+            src={after}
+            alt="После"
+            fill
+            className="object-cover pointer-events-none"
+            sizes="(max-width: 768px) 100vw, 600px"
+          />
+          <div className="absolute bottom-3 right-3 bg-accent-blue/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wider">
+            ПОСЛЕ
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div
+          className="absolute top-0 bottom-0 w-[2px] bg-white shadow-[0_0_8px_rgba(0,0,0,0.5)] z-10 pointer-events-none"
+          style={{ left: `${sliderPos}%` }}
+        />
+
+        {/* Handle */}
+        <div
+          className="absolute top-1/2 z-20 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none"
+          style={{ left: `${sliderPos}%` }}
+        >
+          <ChevronLeft size={12} className="text-primary-900" />
+          <ChevronRight size={12} className="text-primary-900" />
+        </div>
+
+        {/* Hint */}
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white text-[10px] px-2.5 py-1 rounded-full pointer-events-none opacity-60 whitespace-nowrap">
+          ← тяни для сравнения →
+        </div>
+      </div>
+
+      {/* Title */}
+      <div className="px-5 py-4 text-center border-t border-primary-700">
+        <h3 className="text-text-primary font-semibold text-base">{title}</h3>
+      </div>
+    </div>
+  );
+}
+
+// ─── Carousel ─────────────────────────────────────────────────────────────────
+
+type CarouselProps = {
+  items: WorkItem[];
+  aspectClass?: string;
+  maxWidthClass?: string;
+};
+
+function WorkCarousel({ items, aspectClass, maxWidthClass = 'max-w-xs sm:max-w-sm' }: CarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const touchStartX = useRef<number | null>(null);
+
+  const handlePrev = () => setCurrentIndex(i => (i === 0 ? items.length - 1 : i - 1));
+  const handleNext = () => setCurrentIndex(i => (i === items.length - 1 ? 0 : i + 1));
+
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) diff > 0 ? handleNext() : handlePrev();
+    touchStartX.current = null;
+  };
+
+  return (
+    <div className={`${maxWidthClass} mx-auto`}>
+      <div onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+        <BeforeAfterSlider
+          key={items[currentIndex].id}
+          before={items[currentIndex].before}
+          after={items[currentIndex].after}
+          title={items[currentIndex].title}
+          aspectClass={aspectClass}
+        />
+      </div>
+
+      {/* Navigation — only show if more than one item */}
+      {items.length > 1 && (
+        <div className="flex items-center justify-center gap-5 mt-6">
+          <button
+            onClick={handlePrev}
+            className="p-2.5 bg-primary-800 rounded-full hover:bg-primary-700 transition-colors"
+            aria-label="Предыдущая работа"
+          >
+            <ChevronLeft size={22} className="text-text-primary" />
+          </button>
+
+          <div className="flex gap-2">
+            {items.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                className={`rounded-full transition-all duration-300 ${
+                  i === currentIndex
+                    ? 'w-6 h-2.5 bg-accent-blue'
+                    : 'w-2.5 h-2.5 bg-primary-600 hover:bg-primary-500'
+                }`}
+                aria-label={`Работа ${i + 1}`}
+              />
+            ))}
+          </div>
+
+          <button
+            onClick={handleNext}
+            className="p-2.5 bg-primary-800 rounded-full hover:bg-primary-700 transition-colors"
+            aria-label="Следующая работа"
+          >
+            <ChevronRight size={22} className="text-text-primary" />
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Main Section ─────────────────────────────────────────────────────────────
+
 export default function Portfolio() {
   const t = useTranslations('portfolio');
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
-
-  const handlePrev = () => {
-    if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? portfolioItems.length - 1 : selectedImage - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (selectedImage !== null) {
-      setSelectedImage(selectedImage === portfolioItems.length - 1 ? 0 : selectedImage + 1);
-    }
-  };
 
   return (
     <section id="portfolio" className="section bg-primary-900">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="section-title">{t('title')}</h2>
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {portfolioItems.map((item, index) => (
-            <div
-              key={item.id}
-              onClick={() => setSelectedImage(index)}
-              className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
-            >
-              {/* Placeholder background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-700 to-primary-800 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <div className="text-4xl mb-2">
-                    {item.category === 'Smartphones' && '📱'}
-                    {item.category === 'Laptops' && '💻'}
-                    {item.category === 'Consoles' && '🎮'}
-                    {item.category === 'Tablets' && '📱'}
-                  </div>
-                  <p className="text-text-secondary text-sm">{item.category}</p>
-                </div>
-              </div>
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-text-primary font-medium">{item.title}</h3>
-                  <p className="text-text-secondary text-sm">{item.category}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Lightbox */}
-      {selectedImage !== null && (
-        <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              handlePrev();
-            }}
-            className="absolute left-4 p-2 bg-primary-800 rounded-full hover:bg-primary-700 transition-colors"
-          >
-            <ChevronLeft size={32} className="text-text-primary" />
-          </button>
-
-          <div
-            className="relative max-w-4xl mx-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="bg-primary-800 rounded-2xl p-4">
-              <div className="aspect-video bg-gradient-to-br from-primary-700 to-primary-600 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">
-                    {portfolioItems[selectedImage].category === 'Smartphones' && '📱'}
-                    {portfolioItems[selectedImage].category === 'Laptops' && '💻'}
-                    {portfolioItems[selectedImage].category === 'Consoles' && '🎮'}
-                    {portfolioItems[selectedImage].category === 'Tablets' && '📱'}
-                  </div>
-                  <h3 className="text-xl font-semibold text-text-primary">
-                    {portfolioItems[selectedImage].title}
-                  </h3>
-                  <p className="text-text-secondary">
-                    {portfolioItems[selectedImage].category}
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="space-y-16">
+          {/* Phones block */}
+          <div>
+            <h3 className="text-center text-text-secondary text-sm font-semibold uppercase tracking-widest mb-8">
+              📱 Смартфоны
+            </h3>
+            <WorkCarousel
+              items={phoneWorks}
+              aspectClass="aspect-[3/4]"
+              maxWidthClass="max-w-xs sm:max-w-sm"
+            />
           </div>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              handleNext();
-            }}
-            className="absolute right-4 p-2 bg-primary-800 rounded-full hover:bg-primary-700 transition-colors"
-          >
-            <ChevronRight size={32} className="text-text-primary" />
-          </button>
-
-          <button
-            onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 p-2 bg-primary-800 rounded-full hover:bg-primary-700 transition-colors"
-          >
-            <X size={24} className="text-text-primary" />
-          </button>
+          {/* Laptops block */}
+          <div>
+            <h3 className="text-center text-text-secondary text-sm font-semibold uppercase tracking-widest mb-8">
+              💻 Ноутбуки
+            </h3>
+            <WorkCarousel
+              items={laptopWorks}
+              aspectClass="aspect-video"
+              maxWidthClass="max-w-lg sm:max-w-xl"
+            />
+          </div>
         </div>
-      )}
+      </div>
     </section>
   );
 }
