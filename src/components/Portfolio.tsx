@@ -81,13 +81,13 @@ function BeforeAfterSlider({ before, after }: { before: string; after: string })
     >
       {/* Before */}
       <div className="absolute inset-0">
-        <Image src={before} alt="До" fill className="object-cover pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
+        <Image src={before} alt="До" fill className="object-contain pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
         <span className="absolute bottom-2 left-2 text-[10px] font-bold text-white bg-black/60 px-2 py-0.5 rounded-full">ДО</span>
       </div>
 
       {/* After */}
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}>
-        <Image src={after} alt="После" fill className="object-cover pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
+        <Image src={after} alt="После" fill className="object-contain pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
         <span className="absolute bottom-2 right-2 text-[10px] font-bold text-white bg-accent-blue/90 px-2 py-0.5 rounded-full">ПОСЛЕ</span>
       </div>
 
@@ -123,7 +123,7 @@ function WorkCell({ works }: { works: WorkItem[] }) {
 
   return (
     <div
-      className="relative aspect-square rounded-xl overflow-hidden cursor-ew-resize group"
+      className="relative aspect-square rounded-xl overflow-hidden cursor-ew-resize group bg-primary-800"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
