@@ -31,6 +31,12 @@ const phoneWorks: WorkItem[] = [
     before: '/images/portfolio/iphone-battery-before.jpg',
     after: '/images/portfolio/iphone-battery-after.jpg',
   },
+  {
+    id: 4,
+    title: 'Замена дисплея Samsung',
+    before: '/images/portfolio/samsung-display-before.jpg',
+    after: '/images/portfolio/samsung-display-after.jpg',
+  },
 ];
 
 const laptopWorks: WorkItem[] = [
