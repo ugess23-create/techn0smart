@@ -15,7 +15,7 @@ export default function PricesPage() {
   return (
     <>
       <Header />
-      <main className="pt-28 pb-16 min-h-screen prices-page-bg font-[family-name:var(--font-display)]">
+      <main className="pt-32 md:pt-36 pb-16 min-h-screen prices-page-bg font-[family-name:var(--font-display)]">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             {/* Back button */}
