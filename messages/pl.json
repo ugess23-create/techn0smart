@@ -79,7 +79,7 @@
   "pricing": {
     "title": "Cennik",
     "subtitle": "Przejrzyste ceny bez ukrytych opłat",
-    "description": "Sprawdź koszt wymiany baterii, wyświetlacza i tylnej szybki dla wszystkich modeli iPhone — od X do 15 Pro Max.",
+    "description": "Sprawdź koszt wymiany baterii, wyświetlacza i tylnej szybki dla wszystkich modeli.",
     "viewPrices": "Zobacz cennik",
     "pageTitle": "Cennik",
     "pageSubtitle": "Aktualne ceny napraw iPhone",
@@ -94,7 +94,8 @@
       "battery": "Wymiana baterii",
       "display": "Wymiana wyświetlacza",
       "backGlass": "Wymiana tylnej szybki"
-    }
+    },
+    "note": "* Wszystkie ceny zawierają VAT. Jeśli Twojego modelu nie ma na liście — skontaktuj się z nami przez formularz na stronie lub media społecznościowe, podamy dokładną cenę."
   },
   "reviews": {
     "title": "Opinie klientów",

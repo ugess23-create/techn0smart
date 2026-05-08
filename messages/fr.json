@@ -79,7 +79,7 @@
   "pricing": {
     "title": "Tarifs",
     "subtitle": "Prix transparents sans frais cachés",
-    "description": "Découvrez le coût du remplacement de la batterie, de l'écran et de la vitre arrière pour tous les modèles d'iPhone — du X au 15 Pro Max.",
+    "description": "Découvrez le coût du remplacement de la batterie, de l'écran et de la vitre arrière pour tous les modèles.",
     "viewPrices": "Voir les tarifs",
     "pageTitle": "Liste des tarifs",
     "pageSubtitle": "Prix actuels pour les réparations iPhone",
@@ -94,7 +94,8 @@
       "battery": "Remplacement de batterie",
       "display": "Remplacement d'écran",
       "backGlass": "Remplacement vitre arrière"
-    }
+    },
+    "note": "* Tous les prix incluent la TVA. Si votre modèle n'est pas répertorié — contactez-nous via le formulaire ou nos réseaux sociaux, nous vous communiquerons le prix exact."
   },
   "reviews": {
     "title": "Avis clients",

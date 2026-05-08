@@ -22,9 +22,9 @@ export default function Pricing() {
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col items-center">
           {/* Three Advantages-style cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10 w-full max-w-5xl">
             {items.map(({ key, icon: Icon }) => (
               <div
                 key={key}
@@ -43,19 +43,21 @@ export default function Pricing() {
             ))}
           </div>
 
-          <p className="text-text-secondary text-center mb-8 text-base md:text-lg leading-relaxed">
+          <p className="text-text-secondary text-center mb-8 text-base md:text-lg leading-relaxed max-w-3xl">
             {t('description')}
           </p>
 
-          <div className="flex justify-center">
-            <Link
-              href={`/${locale}/prices`}
-              className="inline-flex items-center gap-3 bg-accent-cyan hover:bg-accent-cyan/90 text-primary-900 font-bold text-lg md:text-xl px-10 md:px-12 py-5 md:py-6 rounded-xl transition-all hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
-            >
-              {t('viewPrices')}
-              <ArrowRight size={24} />
-            </Link>
-          </div>
+          <Link
+            href={`/${locale}/prices`}
+            className="inline-flex items-center gap-3 bg-accent-cyan hover:bg-accent-cyan/90 text-primary-900 font-bold text-lg md:text-xl px-10 md:px-12 py-5 md:py-6 rounded-xl transition-all hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
+          >
+            {t('viewPrices')}
+            <ArrowRight size={24} />
+          </Link>
+
+          <p className="text-text-muted text-xs md:text-sm leading-relaxed text-center mt-6 max-w-3xl">
+            {t('note')}
+          </p>
         </div>
       </div>
     </section>
