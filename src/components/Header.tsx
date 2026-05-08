@@ -1,23 +1,31 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const t = useTranslations('nav');
+  const locale = useLocale();
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // On home page use plain anchors; on subpages prepend the home URL
+  const isHome = pathname === `/${locale}` || pathname === '/';
+  const link = (anchor: string) => (isHome ? `#${anchor}` : `/${locale}#${anchor}`);
+  const homeHref = `/${locale}`;
+
   const navItems = [
-    { href: '#services', label: t('services') },
-    { href: '#advantages', label: t('advantages') },
-    { href: '#portfolio', label: t('portfolio') },
-    { href: '#pricing', label: t('pricing') },
-    { href: '#reviews', label: t('reviews') },
-    { href: '#faq', label: t('faq') },
-    { href: '#contact', label: t('contact') },
+    { href: link('services'), label: t('services') },
+    { href: link('advantages'), label: t('advantages') },
+    { href: link('portfolio'), label: t('portfolio') },
+    { href: link('pricing'), label: t('pricing') },
+    { href: link('reviews'), label: t('reviews') },
+    { href: link('faq'), label: t('faq') },
+    { href: link('contact'), label: t('contact') },
   ];
 
   return (
@@ -25,7 +33,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <a href={homeHref} className="flex items-center">
             <Image
               src="/logo.png"
               alt="Technosmart"

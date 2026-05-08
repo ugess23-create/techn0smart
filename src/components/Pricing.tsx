@@ -16,30 +16,30 @@ export default function Pricing() {
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary-800 to-primary-700 rounded-2xl p-8 md:p-10 border border-accent-cyan/20 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
-          {/* Quick preview icons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 mb-8">
-            <div className="flex flex-col items-center gap-2 min-w-[100px]">
+        <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary-800 to-primary-700 rounded-2xl p-6 md:p-10 border border-accent-cyan/20 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+          {/* Quick preview icons — always 3 columns */}
+          <div className="grid grid-cols-3 gap-3 md:gap-6 mb-8 max-w-2xl mx-auto">
+            <div className="flex flex-col items-center gap-2 text-center">
               <div className="w-14 h-14 rounded-xl bg-accent-cyan/10 border border-accent-cyan/30 flex items-center justify-center">
                 <Battery className="text-accent-cyan" size={28} strokeWidth={1.8} />
               </div>
-              <span className="text-text-secondary text-xs md:text-sm text-center">{t('categories.battery')}</span>
+              <span className="text-text-secondary text-xs md:text-sm leading-tight">{t('categories.battery')}</span>
             </div>
-            <div className="flex flex-col items-center gap-2 min-w-[100px]">
+            <div className="flex flex-col items-center gap-2 text-center">
               <div className="w-14 h-14 rounded-xl bg-accent-cyan/10 border border-accent-cyan/30 flex items-center justify-center">
                 <Smartphone className="text-accent-cyan" size={28} strokeWidth={1.8} />
               </div>
-              <span className="text-text-secondary text-xs md:text-sm text-center">{t('categories.display')}</span>
+              <span className="text-text-secondary text-xs md:text-sm leading-tight">{t('categories.display')}</span>
             </div>
-            <div className="flex flex-col items-center gap-2 min-w-[100px]">
+            <div className="flex flex-col items-center gap-2 text-center">
               <div className="w-14 h-14 rounded-xl bg-accent-cyan/10 border border-accent-cyan/30 flex items-center justify-center">
                 <Square className="text-accent-cyan" size={28} strokeWidth={1.8} />
               </div>
-              <span className="text-text-secondary text-xs md:text-sm text-center">{t('categories.backGlass')}</span>
+              <span className="text-text-secondary text-xs md:text-sm leading-tight">{t('categories.backGlass')}</span>
             </div>
           </div>
 
-          <p className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed">
+          <p className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             {t('description')}
           </p>
 
