@@ -7,7 +7,12 @@ import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 
-export default function Header() {
+type HeaderProps = {
+  /** Render as a normal block element instead of fixed overlay */
+  variant?: 'fixed' | 'static';
+};
+
+export default function Header({ variant = 'fixed' }: HeaderProps) {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
@@ -29,7 +34,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-gray-800 shadow-lg">
+    <header className={`${variant === 'fixed' ? 'fixed top-0 left-0 right-0 z-50' : 'relative'} bg-black/95 backdrop-blur-md border-b border-gray-800 shadow-lg`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
