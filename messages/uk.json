@@ -64,7 +64,16 @@
   },
   "portfolio": {
     "title": "Наші роботи",
-    "subtitle": "Приклади успішних ремонтів"
+    "subtitle": "Приклади успішних ремонтів",
+    "before": "До",
+    "after": "Після",
+    "works": {
+      "batteryReplacement": "Заміна батареї iPhone",
+      "iphoneDisplay": "Заміна дисплея iPhone",
+      "samsungDisplay": "Заміна дисплея Samsung",
+      "iphoneBack": "Заміна задньої кришки iPhone",
+      "laptopCleaning": "Чищення та заміна термопасти"
+    }
   },
   "reviews": {
     "title": "Відгуки клієнтів",

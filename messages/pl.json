@@ -64,7 +64,16 @@
   },
   "portfolio": {
     "title": "Nasze prace",
-    "subtitle": "Przykłady udanych napraw"
+    "subtitle": "Przykłady udanych napraw",
+    "before": "Przed",
+    "after": "Po",
+    "works": {
+      "batteryReplacement": "Wymiana baterii iPhone",
+      "iphoneDisplay": "Wymiana wyświetlacza iPhone",
+      "samsungDisplay": "Wymiana wyświetlacza Samsung",
+      "iphoneBack": "Wymiana tylnej szybki iPhone",
+      "laptopCleaning": "Czyszczenie i pasta termoprzewodząca"
+    }
   },
   "reviews": {
     "title": "Opinie klientów",

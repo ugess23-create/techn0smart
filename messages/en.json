@@ -64,7 +64,16 @@
   },
   "portfolio": {
     "title": "Our Work",
-    "subtitle": "Examples of successful repairs"
+    "subtitle": "Examples of successful repairs",
+    "before": "Before",
+    "after": "After",
+    "works": {
+      "batteryReplacement": "iPhone Battery Replacement",
+      "iphoneDisplay": "iPhone Display Replacement",
+      "samsungDisplay": "Samsung Display Replacement",
+      "iphoneBack": "iPhone Back Glass Replacement",
+      "laptopCleaning": "Laptop Cleaning & Thermal Paste"
+    }
   },
   "reviews": {
     "title": "Customer Reviews",

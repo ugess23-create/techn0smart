@@ -64,7 +64,16 @@
   },
   "portfolio": {
     "title": "Nos travaux",
-    "subtitle": "Exemples de réparations réussies"
+    "subtitle": "Exemples de réparations réussies",
+    "before": "Avant",
+    "after": "Après",
+    "works": {
+      "batteryReplacement": "Remplacement de batterie iPhone",
+      "iphoneDisplay": "Remplacement d'écran iPhone",
+      "samsungDisplay": "Remplacement d'écran Samsung",
+      "iphoneBack": "Remplacement vitre arrière iPhone",
+      "laptopCleaning": "Nettoyage et pâte thermique"
+    }
   },
   "reviews": {
     "title": "Avis clients",

@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 type WorkItem = {
   id: number;
-  title: string;
+  titleKey: string;
   before: string;
   after: string;
 };
@@ -15,7 +15,7 @@ type WorkItem = {
 const batteryWorks: WorkItem[] = [
   {
     id: 1,
-    title: 'Замена батареи iPhone',
+    titleKey: 'batteryReplacement',
     before: '/images/portfolio/iphone-battery-before.jpg',
     after: '/images/portfolio/iphone-battery-after.jpg',
   },
@@ -24,19 +24,19 @@ const batteryWorks: WorkItem[] = [
 const displayAndBackWorks: WorkItem[] = [
   {
     id: 1,
-    title: 'Замена дисплея iPhone',
+    titleKey: 'iphoneDisplay',
     before: '/images/portfolio/iphone-display-before.jpg',
     after: '/images/portfolio/iphone-display-after.jpg',
   },
   {
     id: 2,
-    title: 'Замена дисплея Samsung',
+    titleKey: 'samsungDisplay',
     before: '/images/portfolio/samsung-display-before.jpg',
     after: '/images/portfolio/samsung-display-after.jpg',
   },
   {
     id: 3,
-    title: 'Замена задней крышки iPhone',
+    titleKey: 'iphoneBack',
     before: '/images/portfolio/iphone-back-before.jpg',
     after: '/images/portfolio/iphone-back-after.jpg',
   },
@@ -45,7 +45,7 @@ const displayAndBackWorks: WorkItem[] = [
 const laptopWorks: WorkItem[] = [
   {
     id: 1,
-    title: 'Чистка и замена термопасты',
+    titleKey: 'laptopCleaning',
     before: '/images/portfolio/laptop-cleaning-before.jpg',
     after: '/images/portfolio/laptop-cleaning-after.jpg',
   },
@@ -103,6 +103,7 @@ function BeforeAfterSlider({ before, after }: { before: string; after: string })
 // ─── Card with carousel ───────────────────────────────────────────────────────
 
 function WorkCell({ works }: { works: WorkItem[] }) {
+  const t = useTranslations('portfolio');
   const [index, setIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
 
@@ -157,9 +158,9 @@ function WorkCell({ works }: { works: WorkItem[] }) {
 
       {/* Before / After labels */}
       <div className="flex items-center justify-between px-1">
-        <span className="text-accent-cyan text-base md:text-lg font-bold uppercase tracking-[0.25em]">До</span>
+        <span className="text-accent-cyan text-base md:text-lg font-bold uppercase tracking-[0.2em]">{t('before')}</span>
         <span className="text-text-muted text-xs">←  →</span>
-        <span className="text-accent-blue text-base md:text-lg font-bold uppercase tracking-[0.25em]">После</span>
+        <span className="text-accent-blue text-base md:text-lg font-bold uppercase tracking-[0.2em]">{t('after')}</span>
       </div>
 
       {/* Title — animated on change */}
@@ -167,7 +168,7 @@ function WorkCell({ works }: { works: WorkItem[] }) {
         key={work.id}
         className="text-text-primary text-base md:text-lg font-semibold text-center leading-snug animate-[fadeInUp_0.4s_ease-out]"
       >
-        {work.title}
+        {t(`works.${work.titleKey}`)}
       </p>
     </div>
   );

@@ -64,7 +64,16 @@
   },
   "portfolio": {
     "title": "Unsere Arbeiten",
-    "subtitle": "Beispiele erfolgreicher Reparaturen"
+    "subtitle": "Beispiele erfolgreicher Reparaturen",
+    "before": "Vorher",
+    "after": "Nachher",
+    "works": {
+      "batteryReplacement": "iPhone Akku-Tausch",
+      "iphoneDisplay": "iPhone Display-Tausch",
+      "samsungDisplay": "Samsung Display-Tausch",
+      "iphoneBack": "iPhone Backcover-Tausch",
+      "laptopCleaning": "Laptop-Reinigung & Wärmeleitpaste"
+    }
   },
   "reviews": {
     "title": "Kundenbewertungen",
