@@ -17,14 +17,14 @@ export default function Pricing() {
   return (
     <section id="pricing" className="section bg-primary-900 font-[family-name:var(--font-display)]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16 md:mb-20">
           <h2 className="section-title">{t('title')}</h2>
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
         <div className="flex flex-col items-center">
           {/* Three Advantages-style cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10 w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-16 md:mb-20 w-full max-w-5xl">
             {items.map(({ key, icon: Icon }) => (
               <div
                 key={key}
@@ -43,7 +43,7 @@ export default function Pricing() {
             ))}
           </div>
 
-          <p className="text-text-secondary text-center mb-8 text-base md:text-lg leading-relaxed max-w-3xl">
+          <p className="text-text-secondary text-center mb-12 md:mb-14 text-base md:text-lg leading-relaxed max-w-3xl">
             {t('description')}
           </p>
 
@@ -55,7 +55,7 @@ export default function Pricing() {
             <ArrowRight size={24} />
           </Link>
 
-          <p className="text-text-muted text-xs md:text-sm leading-relaxed text-center mt-6 max-w-3xl">
+          <p className="text-text-muted text-xs md:text-sm leading-relaxed text-center mt-12 md:mt-14 max-w-3xl">
             {t('note')}
           </p>
         </div>
