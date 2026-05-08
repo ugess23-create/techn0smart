@@ -7,6 +7,7 @@
     "services": "Usługi",
     "advantages": "Zalety",
     "portfolio": "Portfolio",
+    "pricing": "Cennik",
     "reviews": "Opinie",
     "faq": "FAQ",
     "contact": "Kontakt"
@@ -73,6 +74,21 @@
       "samsungDisplay": "Wymiana wyświetlacza Samsung",
       "iphoneBack": "Wymiana tylnej szybki iPhone",
       "laptopCleaning": "Czyszczenie i pasta termoprzewodząca"
+    }
+  },
+  "pricing": {
+    "title": "Cennik",
+    "subtitle": "Przejrzyste ceny bez ukrytych opłat",
+    "description": "Sprawdź koszt wymiany baterii, wyświetlacza i tylnej szybki dla wszystkich modeli iPhone — od X do 15 Pro Max.",
+    "viewPrices": "Zobacz cennik",
+    "pageTitle": "Cennik",
+    "pageSubtitle": "Aktualne ceny napraw iPhone",
+    "back": "Powrót do strony głównej",
+    "disclaimer": "Ostateczna cena może się różnić w zależności od stanu urządzenia i dodatkowych uszkodzeń. Dokładna cena zostanie potwierdzona podczas diagnostyki.",
+    "categories": {
+      "battery": "Wymiana baterii iPhone",
+      "display": "Wymiana wyświetlacza iPhone",
+      "backGlass": "Wymiana tylnej szybki iPhone"
     }
   },
   "reviews": {

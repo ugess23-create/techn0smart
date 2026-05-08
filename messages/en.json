@@ -7,6 +7,7 @@
     "services": "Services",
     "advantages": "Advantages",
     "portfolio": "Portfolio",
+    "pricing": "Pricing",
     "reviews": "Reviews",
     "faq": "FAQ",
     "contact": "Contact"
@@ -73,6 +74,21 @@
       "samsungDisplay": "Samsung Display Replacement",
       "iphoneBack": "iPhone Back Glass Replacement",
       "laptopCleaning": "Laptop Cleaning & Thermal Paste"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent prices with no hidden fees",
+    "description": "See the cost of battery, display and back glass replacement for all iPhone models — from X to 15 Pro Max.",
+    "viewPrices": "View Pricing",
+    "pageTitle": "Price List",
+    "pageSubtitle": "Current prices for iPhone repairs",
+    "back": "Back to Home",
+    "disclaimer": "Final cost may vary depending on device condition and additional damage. Exact price will be confirmed during diagnostics.",
+    "categories": {
+      "battery": "iPhone Battery Replacement",
+      "display": "iPhone Display Replacement",
+      "backGlass": "iPhone Back Glass Replacement"
     }
   },
   "reviews": {

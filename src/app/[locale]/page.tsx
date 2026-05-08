@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Advantages from '@/components/Advantages';
 import Portfolio from '@/components/Portfolio';
+import Pricing from '@/components/Pricing';
 import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
@@ -19,6 +20,7 @@ export default function HomePage() {
         <Services />
         <Advantages />
         <Portfolio />
+        <Pricing />
         <Reviews />
         <FAQ />
         <Contact />

@@ -7,6 +7,7 @@
     "services": "Leistungen",
     "advantages": "Vorteile",
     "portfolio": "Portfolio",
+    "pricing": "Preise",
     "reviews": "Bewertungen",
     "faq": "FAQ",
     "contact": "Kontakt"
@@ -73,6 +74,21 @@
       "samsungDisplay": "Samsung Display-Tausch",
       "iphoneBack": "iPhone Backcover-Tausch",
       "laptopCleaning": "Laptop-Reinigung & Wärmeleitpaste"
+    }
+  },
+  "pricing": {
+    "title": "Preise",
+    "subtitle": "Transparente Preise ohne versteckte Kosten",
+    "description": "Erfahren Sie die Kosten für Akku-, Display- und Backcover-Tausch für alle iPhone-Modelle — von X bis 15 Pro Max.",
+    "viewPrices": "Preise ansehen",
+    "pageTitle": "Preisliste",
+    "pageSubtitle": "Aktuelle Preise für iPhone-Reparaturen",
+    "back": "Zur Startseite",
+    "disclaimer": "Der endgültige Preis kann je nach Zustand des Geräts und etwaigen zusätzlichen Schäden variieren. Den genauen Preis erfahren Sie nach der Diagnose.",
+    "categories": {
+      "battery": "iPhone Akku-Tausch",
+      "display": "iPhone Display-Tausch",
+      "backGlass": "iPhone Backcover-Tausch"
     }
   },
   "reviews": {

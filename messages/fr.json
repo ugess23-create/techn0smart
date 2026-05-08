@@ -7,6 +7,7 @@
     "services": "Services",
     "advantages": "Avantages",
     "portfolio": "Portfolio",
+    "pricing": "Tarifs",
     "reviews": "Avis",
     "faq": "FAQ",
     "contact": "Contact"
@@ -73,6 +74,21 @@
       "samsungDisplay": "Remplacement d'écran Samsung",
       "iphoneBack": "Remplacement vitre arrière iPhone",
       "laptopCleaning": "Nettoyage et pâte thermique"
+    }
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Prix transparents sans frais cachés",
+    "description": "Découvrez le coût du remplacement de la batterie, de l'écran et de la vitre arrière pour tous les modèles d'iPhone — du X au 15 Pro Max.",
+    "viewPrices": "Voir les tarifs",
+    "pageTitle": "Liste des tarifs",
+    "pageSubtitle": "Prix actuels pour les réparations iPhone",
+    "back": "Retour à l'accueil",
+    "disclaimer": "Le prix final peut varier selon l'état de l'appareil et les dommages supplémentaires éventuels. Le prix exact sera confirmé lors du diagnostic.",
+    "categories": {
+      "battery": "Remplacement de batterie iPhone",
+      "display": "Remplacement d'écran iPhone",
+      "backGlass": "Remplacement vitre arrière iPhone"
     }
   },
   "reviews": {
