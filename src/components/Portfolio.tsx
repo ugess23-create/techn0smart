@@ -109,6 +109,7 @@ function WorkCell({ works }: { works: WorkItem[] }) {
 
   const prev = (e: React.MouseEvent) => { e.stopPropagation(); setIndex(i => (i === 0 ? works.length - 1 : i - 1)); };
   const next = (e: React.MouseEvent) => { e.stopPropagation(); setIndex(i => (i === works.length - 1 ? 0 : i + 1)); };
+  const goTo = (i: number) => (e: React.MouseEvent) => { e.stopPropagation(); setIndex(i); };
 
   const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
   const onTouchEnd = (e: React.TouchEvent) => {
@@ -134,27 +135,39 @@ function WorkCell({ works }: { works: WorkItem[] }) {
           <>
             <button
               onClick={prev}
-              className="absolute left-2 top-1/2 -translate-y-1/2 z-30 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 md:w-10 md:h-10 rounded-full bg-black/70 hover:bg-black/90 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition-opacity shadow-lg"
               aria-label="Previous"
             >
-              <ChevronLeft size={16} className="text-white" />
+              <ChevronLeft size={20} className="text-white" />
             </button>
             <button
               onClick={next}
-              className="absolute right-2 top-1/2 -translate-y-1/2 z-30 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 md:w-10 md:h-10 rounded-full bg-black/70 hover:bg-black/90 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition-opacity shadow-lg"
               aria-label="Next"
             >
-              <ChevronRight size={16} className="text-white" />
+              <ChevronRight size={20} className="text-white" />
             </button>
 
-            <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30 flex gap-1.5 pointer-events-none">
-              {works.map((_, i) => (
-                <span key={i} className={`rounded-full transition-all ${i === index ? 'w-6 h-2 bg-white' : 'w-2 h-2 bg-white/50'}`} />
-              ))}
-            </div>
+            <span className="absolute top-3 right-3 z-30 px-2.5 py-1 rounded-full bg-black/70 text-white text-xs font-bold shadow-lg pointer-events-none">
+              {index + 1} / {works.length}
+            </span>
           </>
         )}
       </div>
+
+      {/* Clickable dots below image */}
+      {works.length > 1 && (
+        <div className="flex items-center justify-center gap-2 mt-1">
+          {works.map((_, i) => (
+            <button
+              key={i}
+              onClick={goTo(i)}
+              aria-label={`Show work ${i + 1}`}
+              className={`rounded-full transition-all ${i === index ? 'w-8 h-2 bg-accent-cyan' : 'w-2 h-2 bg-text-muted hover:bg-text-secondary'}`}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Before / After labels */}
       <div className="flex items-center justify-between px-1">

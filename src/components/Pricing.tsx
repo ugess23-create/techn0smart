@@ -40,7 +40,10 @@ export default function Pricing() {
             </div>
           </div>
 
-          <p className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed">
+          <p
+            className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed"
+            style={{ textWrap: 'balance' }}
+          >
             {t('description')}
           </p>
 
