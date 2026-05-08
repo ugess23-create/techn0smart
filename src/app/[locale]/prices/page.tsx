@@ -21,21 +21,11 @@ export default function PricesPage() {
             {/* Back button */}
             <Link
               href={`/${locale}`}
-              className="inline-flex items-center gap-2 text-text-secondary hover:text-accent-cyan transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-text-secondary hover:text-accent-cyan transition-colors mb-10"
             >
               <ArrowLeft size={20} />
               {t('back')}
             </Link>
-
-            {/* Title */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
-                {t('pageTitle')}
-              </h1>
-              <p className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto">
-                {t('pageSubtitle')}
-              </p>
-            </div>
 
             {/* Cards grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
