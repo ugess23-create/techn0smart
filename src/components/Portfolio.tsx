@@ -12,30 +12,33 @@ type WorkItem = {
   after: string;
 };
 
-const phoneWorks: WorkItem[] = [
+const batteryWorks: WorkItem[] = [
   {
     id: 1,
-    title: 'Замена задней крышки iPhone',
-    before: '/images/portfolio/iphone-back-before.jpg',
-    after: '/images/portfolio/iphone-back-after.jpg',
+    title: 'Замена батареи iPhone',
+    before: '/images/portfolio/iphone-battery-before.jpg',
+    after: '/images/portfolio/iphone-battery-after.jpg',
   },
+];
+
+const displayAndBackWorks: WorkItem[] = [
   {
-    id: 2,
+    id: 1,
     title: 'Замена дисплея iPhone',
     before: '/images/portfolio/iphone-display-before.jpg',
     after: '/images/portfolio/iphone-display-after.jpg',
   },
   {
-    id: 3,
-    title: 'Замена батареи iPhone',
-    before: '/images/portfolio/iphone-battery-before.jpg',
-    after: '/images/portfolio/iphone-battery-after.jpg',
-  },
-  {
-    id: 4,
+    id: 2,
     title: 'Замена дисплея Samsung',
     before: '/images/portfolio/samsung-display-before.jpg',
     after: '/images/portfolio/samsung-display-after.jpg',
+  },
+  {
+    id: 3,
+    title: 'Замена задней крышки iPhone',
+    before: '/images/portfolio/iphone-back-before.jpg',
+    after: '/images/portfolio/iphone-back-after.jpg',
   },
 ];
 
@@ -48,7 +51,7 @@ const laptopWorks: WorkItem[] = [
   },
 ];
 
-// ─── Before/After Slider (fits inside a square grid cell) ─────────────────────
+// ─── Before/After Slider ──────────────────────────────────────────────────────
 
 function BeforeAfterSlider({ before, after }: { before: string; after: string }) {
   const [sliderPos, setSliderPos] = useState(50);
@@ -79,19 +82,14 @@ function BeforeAfterSlider({ before, after }: { before: string; after: string })
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
     >
-      {/* Before */}
       <div className="absolute inset-0">
         <Image src={before} alt="До" fill className="object-contain pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
-        <span className="absolute bottom-2 left-2 text-[10px] font-bold text-white bg-black/60 px-2 py-0.5 rounded-full">ДО</span>
       </div>
 
-      {/* After */}
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}>
         <Image src={after} alt="После" fill className="object-contain pointer-events-none" sizes="(max-width: 768px) 50vw, 33vw" />
-        <span className="absolute bottom-2 right-2 text-[10px] font-bold text-white bg-accent-blue/90 px-2 py-0.5 rounded-full">ПОСЛЕ</span>
       </div>
 
-      {/* Divider */}
       <div className="absolute top-0 bottom-0 w-[2px] bg-white shadow-md z-10 pointer-events-none" style={{ left: `${sliderPos}%` }}>
         <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-white shadow-lg flex items-center justify-center">
           <ChevronLeft size={9} className="text-primary-900" />
@@ -102,7 +100,7 @@ function BeforeAfterSlider({ before, after }: { before: string; after: string })
   );
 }
 
-// ─── Grid cell with carousel of works ─────────────────────────────────────────
+// ─── Card with carousel ───────────────────────────────────────────────────────
 
 function WorkCell({ works }: { works: WorkItem[] }) {
   const [index, setIndex] = useState(0);
@@ -122,42 +120,55 @@ function WorkCell({ works }: { works: WorkItem[] }) {
   const work = works[index];
 
   return (
-    <div
-      className="relative aspect-square rounded-xl overflow-hidden cursor-ew-resize group bg-primary-800"
-      onTouchStart={onTouchStart}
-      onTouchEnd={onTouchEnd}
-    >
-      <BeforeAfterSlider key={work.id} before={work.before} after={work.after} />
+    <div className="flex flex-col gap-3 font-[family-name:var(--font-display)]">
+      {/* Image area with slider */}
+      <div
+        className="relative aspect-square rounded-xl overflow-hidden bg-primary-800 group"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
+        <BeforeAfterSlider key={work.id} before={work.before} after={work.after} />
 
-      {/* Title overlay */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/80 to-transparent px-3 pt-6 pb-2 pointer-events-none">
-        <p className="text-white text-xs font-medium leading-tight">{work.title}</p>
+        {works.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-30 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              aria-label="Previous"
+            >
+              <ChevronLeft size={16} className="text-white" />
+            </button>
+            <button
+              onClick={next}
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-30 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              aria-label="Next"
+            >
+              <ChevronRight size={16} className="text-white" />
+            </button>
+
+            <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30 flex gap-1.5 pointer-events-none">
+              {works.map((_, i) => (
+                <span key={i} className={`rounded-full transition-all ${i === index ? 'w-6 h-2 bg-white' : 'w-2 h-2 bg-white/50'}`} />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
-      {/* Prev/Next arrows — only if multiple works */}
-      {works.length > 1 && (
-        <>
-          <button
-            onClick={prev}
-            className="absolute left-1.5 top-1/2 -translate-y-1/2 z-30 w-6 h-6 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-          >
-            <ChevronLeft size={14} className="text-white" />
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-1.5 top-1/2 -translate-y-1/2 z-30 w-6 h-6 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-          >
-            <ChevronRight size={14} className="text-white" />
-          </button>
+      {/* Before / After labels */}
+      <div className="flex items-center justify-between px-1">
+        <span className="text-accent-cyan text-base md:text-lg font-bold uppercase tracking-[0.25em]">До</span>
+        <span className="text-text-muted text-xs">←  →</span>
+        <span className="text-accent-blue text-base md:text-lg font-bold uppercase tracking-[0.25em]">После</span>
+      </div>
 
-          {/* Dots */}
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-30 flex gap-1 pointer-events-none">
-            {works.map((_, i) => (
-              <span key={i} className={`rounded-full transition-all ${i === index ? 'w-4 h-1.5 bg-white' : 'w-1.5 h-1.5 bg-white/50'}`} />
-            ))}
-          </div>
-        </>
-      )}
+      {/* Title — animated on change */}
+      <p
+        key={work.id}
+        className="text-text-primary text-base md:text-lg font-semibold text-center leading-snug animate-[fadeInUp_0.4s_ease-out]"
+      >
+        {work.title}
+      </p>
     </div>
   );
 }
@@ -175,20 +186,10 @@ export default function Portfolio() {
           <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Smartphones cell */}
-          <WorkCell works={phoneWorks} />
-
-          {/* Laptops cell */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <WorkCell works={batteryWorks} />
+          <WorkCell works={displayAndBackWorks} />
           <WorkCell works={laptopWorks} />
-
-          {/* Consoles placeholder */}
-          <div className="relative aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-primary-700 to-primary-800 flex items-center justify-center">
-            <div className="text-center p-4">
-              <div className="text-4xl mb-2">🎮</div>
-              <p className="text-text-secondary text-sm">Consoles</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

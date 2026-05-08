@@ -2,8 +2,16 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Manrope } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
+
+const manrope = Manrope({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+});
 
 type Props = {
   children: React.ReactNode;
@@ -43,7 +51,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={manrope.variable}>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
