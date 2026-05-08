@@ -18,8 +18,8 @@ export default function Pricing() {
 
         <div className="flex justify-center">
         <div className="w-full max-w-3xl bg-gradient-to-br from-primary-800 to-primary-700 rounded-2xl p-6 md:p-10 border border-accent-cyan/20 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
-          {/* Quick preview icons — always 3 columns */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 mb-8 max-w-2xl mx-auto">
+          {/* Quick preview icons — always 3 columns, full card width */}
+          <div className="grid grid-cols-3 gap-3 md:gap-6 mb-8">
             <div className="flex flex-col items-center gap-2 text-center">
               <div className="w-14 h-14 rounded-xl bg-accent-cyan/10 border border-accent-cyan/30 flex items-center justify-center">
                 <Battery className="text-accent-cyan" size={28} strokeWidth={1.8} />
