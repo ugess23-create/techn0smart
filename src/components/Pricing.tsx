@@ -40,7 +40,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          <p className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="text-text-secondary text-center mb-6 text-base md:text-lg leading-relaxed">
             {t('description')}
           </p>
 
