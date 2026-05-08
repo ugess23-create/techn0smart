@@ -89,6 +89,11 @@
       "battery": "Remplacement de batterie iPhone",
       "display": "Remplacement d'écran iPhone",
       "backGlass": "Remplacement vitre arrière iPhone"
+    },
+    "shortCategories": {
+      "battery": "Remplacement de batterie",
+      "display": "Remplacement d'écran",
+      "backGlass": "Remplacement vitre arrière"
     }
   },
   "reviews": {

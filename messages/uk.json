@@ -89,6 +89,11 @@
       "battery": "Заміна акумулятора iPhone",
       "display": "Заміна дисплея iPhone",
       "backGlass": "Заміна заднього скла iPhone"
+    },
+    "shortCategories": {
+      "battery": "Заміна акумулятора",
+      "display": "Заміна дисплея",
+      "backGlass": "Заміна заднього скла"
     }
   },
   "reviews": {

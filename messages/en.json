@@ -89,6 +89,11 @@
       "battery": "iPhone Battery Replacement",
       "display": "iPhone Display Replacement",
       "backGlass": "iPhone Back Glass Replacement"
+    },
+    "shortCategories": {
+      "battery": "Battery Replacement",
+      "display": "Display Replacement",
+      "backGlass": "Back Glass Replacement"
     }
   },
   "reviews": {

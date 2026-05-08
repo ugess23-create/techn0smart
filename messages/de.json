@@ -89,6 +89,11 @@
       "battery": "iPhone Akku-Tausch",
       "display": "iPhone Display-Tausch",
       "backGlass": "iPhone Backcover-Tausch"
+    },
+    "shortCategories": {
+      "battery": "Akku-Tausch",
+      "display": "Display-Tausch",
+      "backGlass": "Backcover-Tausch"
     }
   },
   "reviews": {

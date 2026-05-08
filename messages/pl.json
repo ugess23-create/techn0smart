@@ -89,6 +89,11 @@
       "battery": "Wymiana baterii iPhone",
       "display": "Wymiana wyświetlacza iPhone",
       "backGlass": "Wymiana tylnej szybki iPhone"
+    },
+    "shortCategories": {
+      "battery": "Wymiana baterii",
+      "display": "Wymiana wyświetlacza",
+      "backGlass": "Wymiana tylnej szybki"
     }
   },
   "reviews": {

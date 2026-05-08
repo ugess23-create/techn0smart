@@ -89,6 +89,11 @@
       "battery": "Замена аккумулятора iPhone",
       "display": "Замена дисплея iPhone",
       "backGlass": "Замена заднего стекла iPhone"
+    },
+    "shortCategories": {
+      "battery": "Замена аккумулятора",
+      "display": "Замена дисплея",
+      "backGlass": "Замена заднего стекла"
     }
   },
   "reviews": {
