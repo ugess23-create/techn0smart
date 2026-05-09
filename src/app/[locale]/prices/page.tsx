@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 import { ArrowLeft, Battery, Smartphone, Square } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -18,7 +19,10 @@ const iconMap = {
 export default function PricesPage() {
   const t = useTranslations('pricing');
   const locale = useLocale();
-  const [activeId, setActiveId] = useState(priceCategories[0].id);
+  const searchParams = useSearchParams();
+  const initialId =
+    priceCategories.find((c) => c.id === searchParams.get('category'))?.id ?? priceCategories[0].id;
+  const [activeId, setActiveId] = useState(initialId);
 
   const activeCategory = priceCategories.find((c) => c.id === activeId) ?? priceCategories[0];
 
