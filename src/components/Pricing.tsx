@@ -29,7 +29,7 @@ export default function Pricing() {
         <div className="flex justify-center">
           <div className="w-full max-w-xl flex flex-col items-stretch">
             {/* Stacked category cards */}
-            <div className="flex flex-col gap-5 md:gap-6 mb-16 md:mb-20">
+            <div className="flex flex-col" style={{ gap: '24px' }}>
               {items.map(({ key, icon: Icon }) => (
                 <Link
                   key={key}
@@ -50,6 +50,7 @@ export default function Pricing() {
             {/* Big CTA button */}
             <Link
               href={`/${locale}/prices`}
+              style={{ marginTop: '80px' }}
               className="inline-flex items-center justify-between gap-6 w-full bg-gradient-to-b from-[#5fdaf0] to-accent-cyan text-primary-900 font-bold text-xl md:text-2xl pl-10 pr-3 py-3 md:py-4 rounded-full transition-all hover:shadow-[0_0_50px_rgba(34,211,238,0.6)] shadow-[0_0_30px_rgba(34,211,238,0.35)] hover:-translate-y-0.5"
             >
               <span className="flex-1 text-center">{t('viewPrices')}</span>
@@ -58,7 +59,10 @@ export default function Pricing() {
               </span>
             </Link>
 
-            <p className="text-text-muted text-xs md:text-sm leading-relaxed text-center mt-10 md:mt-12">
+            <p
+              style={{ marginTop: '48px' }}
+              className="text-text-muted text-xs md:text-sm leading-relaxed text-center"
+            >
               {t('note')}
             </p>
           </div>
